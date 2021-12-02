@@ -17,9 +17,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-
 knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = FALSE)
-
 ```
 
 ::: {style="font-size: 1em;"}
@@ -130,7 +128,7 @@ You're tasked with writing a Python script, which must do the following items.
 
     1.  Each line will be a JSON formatted record (which may be from any of the models above).
 
-    2.  You will be able to differentiate which table to use by reading an extra column inside each record called source_table.
+    2.  You will be able to differentiate which table to use by reading an extra column inside each record called `source_table`.
 
     3.  This state information can be found using `source_table`, `guid`, `action`, and `timestamp`.
 
@@ -138,7 +136,7 @@ You're tasked with writing a Python script, which must do the following items.
 
 **NOTE**: You are free to add additional columns to your models as you see fit for the purpose of testing your application.
 
-A sample input file is provided for you. When processing this file, your code should print an output similar to what is shown here.
+A [sample input file](#sample_input_payload_data) is provided for you. When processing this file, your code should print an output similar to what is shown here.
 
 ------------------------------------------------------------------------
 
@@ -194,13 +192,13 @@ data model consisting of three tables named *Company*, *Employee*, and
 *Position*. The ERD represented in **Figure 1** also contains the following
 informational elements, which are important for constructing a physical data model.
 
-1. Field names for each table
+1. *Field names* for each table
 
-1. Data types for each field
+1. *Data types* for each field
 
-1. Field constraints, including primary and foreign keys
+1. *Field constraints*, including *primary keys* and *foreign keys*
 
-1. Foreign key relationships between tables, including directionality, cardinality, and optionality
+1. *Foreign key relationships* between *tables*, including *directionality*, *cardinality*, and *optionality*
 
 
 ```{r TableSet2, eval = FALSE}
@@ -267,9 +265,9 @@ library(here)
 
 sampleText <- readr::read_lines(here::here("data/010_Paylocity_sample_payload_for_DB_loading.txt"))
 
-knitr::raw_html("<code>\n")
-knitr::raw_html(paste0("\t", sampleText))
-knitr::raw_html("</code>\n")
+knitr::raw_html("<code id='sample_input_payload_data'>")
+knitr::raw_html(paste0("\t", sampleText, "\n"))
+knitr::raw_html("</code>")
 
 ```
 

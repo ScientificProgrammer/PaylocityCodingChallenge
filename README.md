@@ -1,6 +1,6 @@
 <div style="font-size: 1em;">
 
-Last updated on 2021-12-01 18:32:35
+Last updated on 2021-12-01 18:35:14
 
 </div>
 
@@ -272,69 +272,37 @@ following actions.
 
 <code id='sample_input_payload_data'>
     { "source_table": "Company",  "action": "INSERT", "timestamp": "100.0",  "guid": "1c898066-858e-406c-a15d-36146c9642de", "name": "Paylocity",  "status": "1" }
-
     { "source_table": "Company",  "action": "INSERT", "timestamp": "200.0",  "guid": "0090d7b0-b07a-47cd-b295-ff798a6c0613", "name": "Taco Shack", "status": "1" }
-
     { "source_table": "Company",  "action": "UPDATE", "timestamp": "300.0",  "guid": "1c898066-858e-406c-a15d-36146c9642de", "name": "Paylocity",  "status": "2" }
-
     { "source_table": "Employee", "action": "INSERT", "timestamp": "100.0",  "guid": "e086115c-0ca1-480c-8fa8-5e1773558b9f", "state": "PA", "status": "1" }
-
     { "source_table": "Job",      "action": "INSERT", "timestamp": "100.0",  "guid": "58291fe5-4e4c-41da-87a5-e1fccb8aac25", "company_guid": "1c898066-858e-406c-a15d-36146c9642de", "employee_guid": "e086115c-0ca1-480c-8fa8-5e1773558b9f" }
-
     { "source_table": "Position", "action": "INSERT", "timestamp": "100.0",  "guid": "40a36493-f450-4331-874c-5ef01aabe1d5", "name": "Software Eng",  "status": "1" }
-
     { "source_table": "Company",  "action": "UPDATE", "timestamp": "400.0",  "guid": "0090d7b0-b07a-47cd-b295-ff798a6c0613", "name": "Burrito Shack", "status": "1" }
-
     { "source_table": "Employee", "action": "INSERT", "timestamp": "200.0",  "guid": "275ac9c6-8902-4fec-9a19-25ddfc8d8ff8", "state": "OH", "status": "1" }
-
     { "source_table": "Employee", "action": "INSERT", "timestamp": "400.0",  "guid": "4e0c8c17-b031-4a72-b73d-f0a85570826d", "state": "VA", "status": "1" }
-
     { "source_table": "Job",      "action": "INSERT", "timestamp": "200.0",  "guid": "f73a2796-4579-4779-8345-f0dfcf7dd533", "company_guid": "0090d7b0-b07a-47cd-b295-ff798a6c0613", "employee_guid": "4e0c8c17-b031-4a72-b73d-f0a85570826d" }
-
     { "source_table": "Employee", "action": "DELETE", "timestamp": "300.0",  "guid": "275ac9c6-8902-4fec-9a19-25ddfc8d8ff8", "state": "OH", "status": "1" }
-
     { "source_table": "Position", "action": "INSERT", "timestamp": "200.0",  "guid": "f9b3ee71-7fb2-4dd5-9c13-b4c10d11fde7", "name": "Data Eng", "status": "1" }
-
     { "source_table": "Employee", "action": "UPDATE", "timestamp": "500.0",  "guid": "e086115c-0ca1-480c-8fa8-5e1773558b9f", "state": "PA", "status": "2" }
-
     { "source_table": "Employee", "action": "UPDATE", "timestamp": "600.0",  "guid": "e086115c-0ca1-480c-8fa8-5e1773558b9f", "state": "FL", "status": "2" }
-
     { "source_table": "Company",  "action": "UPDATE", "timestamp": "400.0",  "guid": "0090d7b0-b07a-47cd-b295-ff798a6c0613", "name": "Burrito Shack",     "status": "2" }
-
     { "source_table": "Position", "action": "UPDATE", "timestamp": "300.0",  "guid": "40a36493-f450-4331-874c-5ef01aabe1d5", "name": "Software Engineer", "status": "1" }
-
     { "source_table": "Employee", "action": "UPDATE", "timestamp": "700.0",  "guid": "4e0c8c17-b031-4a72-b73d-f0a85570826d", "state": "VA", "status": "2" }
-
     { "source_table": "Employee", "action": "INSERT", "timestamp": "800.0",  "guid": "d4926109-b6c9-4447-a53c-b787684e10f1", "state": "IL", "status": "1" }
-
     { "source_table": "Company",  "action": "INSERT", "timestamp": "600.0",  "guid": "55bd6d92-7731-4006-9f84-79264f8fba24", "name": "Cheesey Za", "status": "1" }
-
     { "source_table": "Employee", "action": "INSERT", "timestamp": "900.0",  "guid": "7010237f-3cfa-4dcf-83f5-39d6bd912b91", "state": "CA", "status": "1" }
-
     { "source_table": "Position", "action": "INSERT", "timestamp": "400.0",  "guid": "ca391508-2f5d-4529-b7c8-d3d76e05cdd6", "name": "Code Monkey", "status": "1" }
-
     { "source_table": "Employee", "action": "UPDATE", "timestamp": "100.0",  "guid": "d4926109-b6c9-4447-a53c-b787684e10f1", "state": "IL", "status": "2" }
-
     { "source_table": "Employee", "action": "UPDATE", "timestamp": "1100.0", "guid": "7010237f-3cfa-4dcf-83f5-39d6bd912b91", "state": "NV", "status": "2" }
-
     { "source_table": "Position", "action": "UPDATE", "timestamp": "500.0",  "guid": "f9b3ee71-7fb2-4dd5-9c13-b4c10d11fde7", "name": "Data Engineer", "status": "1" }
-
     { "source_table": "Employee", "action": "UPDATE", "timestamp": "1200.0", "guid": "4e0c8c17-b031-4a72-b73d-f0a85570826d", "state": "VA", "status": "3" }
-
     { "source_table": "Employee", "action": "DELETE", "timestamp": "1300.0", "guid": "7010237f-3cfa-4dcf-83f5-39d6bd912b91", "state": "NV", "status": "2" }
-
     { "source_table": "Position", "action": "DELETE", "timestamp": "600.0",  "guid": "ca391508-2f5d-4529-b7c8-d3d76e05cdd6", "name": "Code Monkey", "status": "1" }
-
     { "source_table": "Employee", "action": "UPDATE", "timestamp": "1400.0", "guid": "d4926109-b6c9-4447-a53c-b787684e10f1", "state": "IL", "status": "3" }
-
     { "source_table": "Employee", "action": "UPDATE", "timestamp": "1500.0", "guid": "4e0c8c17-b031-4a72-b73d-f0a85570826d", "state": "MI", "status": "3" }
-
     { "source_table": "Company",  "action": "DELETE", "timestamp": "700.0",  "guid": "55bd6d92-7731-4006-9f84-79264f8fba24", "name": "Cheesey Za", "status": "1" }
-
     { "source_table": "Employee", "action": "INSERT", "timestamp": "1600.0", "guid": "259d5154-5f76-481b-b0f9-53e24c3b570e", "state": "NY", "status": "1" }
-
     { "source_table": "Job",      "action": "INSERT", "timestamp": "300.0",  "guid": "5ab54bb5-b72d-40f8-9a49-e0d2d004d7a9", "company_guid": "0090d7b0-b07a-47cd-b295-ff798a6c0613", "employee_guid": "259d5154-5f76-481b-b0f9-53e24c3b570e" }
-
 </code>
 
 <div style="height: 5em;">

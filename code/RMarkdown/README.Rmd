@@ -266,7 +266,7 @@ library(here)
 sampleText <- readr::read_lines(here::here("data/010_Paylocity_sample_payload_for_DB_loading.txt"))
 
 knitr::raw_html("<code id='sample_input_payload_data'>")
-knitr::raw_html(paste0("\t", sampleText, "\n"))
+knitr::raw_html(paste0("\t", sampleText))
 knitr::raw_html("</code>")
 
 ```

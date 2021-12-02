@@ -50,17 +50,17 @@ A written summary of the candidate's work from these coding challenges must be s
 
 Each candidate is required to complete the following exercise and return it a minimum of 24 hours before their interview. They will be asked to share their ideas with the team during the interview. They should be prepared to walk the team through concepts such as the following.
 
-1.  Here is a summary of the work that I performed.
+1.  &ldquo;*Here is a summary of the work that I performed.*&rdquo;
 
-2.  How did I accomplish the task?
+2.  &ldquo;*How did I accomplish the task?*&rdquo;
 
-3.  Why did I choose a particular approach?
+3.  &ldquo;*Why did I choose a particular approach?*&rdquo;
 
-Also be prepared for a few questions from the team such as, "*What would you do if 'this issue' came up?*"
+Also be prepared for a few questions from the team such as, &ldquo;*What would you do if 'this issue' came up?*&rdquo;
 
 The team wants to get an idea how the person thinks. Also, the submitted/developed code should run.
 
-The expectation is that the candidate will complete the Python exercise ahead of time and walk through their answer during the Technical interview. The candidate will be expected to present their code and show it running on their machine.
+The expectation is that the candidate will complete the `Python` exercise ahead of time and walk through their answer during the **Technical Interview**. The candidate will be expected to present their code and show it running on their machine.
 
 ## MULTI-PART SQL EXERCISE: LIVE WALK-THROUGH
 
@@ -258,6 +258,20 @@ For the data model illustrated in **Figure 1**, please complete the following ac
 ---
 
 # APPENDICES
+
+## Sample Input Database Payload File
+
+```{r ShowPayloadFile}
+library(readr)
+library(here)
+
+sampleText <- readr::read_lines(here::here("data/010_Paylocity_sample_payload_for_DB_loading.txt"))
+
+knitr::raw_html("<code>\n")
+knitr::raw_html(paste0("\t", sampleText))
+knitr::raw_html("</code>\n")
+
+```
 
 
 

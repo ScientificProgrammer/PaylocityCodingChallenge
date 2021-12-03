@@ -136,7 +136,7 @@ You're tasked with writing a Python script, which must do the following items.
 
 **NOTE**: You are free to add additional columns to your models as you see fit for the purpose of testing your application.
 
-A sample input file is provided for you. It can be downloaded directly from the [data subdirectory](./data/010_Paylocity_sample_payload_for_DB_loading.txt) of this repo, and it is also available in the Appendix &lparen;see [below](#31-sample-input-database-payload-file), below&rparen; When processing this file, your code should print an output similar to what is shown here.
+A sample input file is provided for you. It can be downloaded directly from the [data subdirectory](./data/010_Paylocity_sample_payload_for_DB_loading.txt) of this repo, and it is also available in the Appendix &lpar;see [below](#31-sample-input-database-payload-file), below&rpar; When processing this file, your code should print an output similar to what is shown here.
 
 ------------------------------------------------------------------------
 
@@ -260,6 +260,7 @@ For the data model illustrated in **Figure 1**, please complete the following ac
 ## Sample Input Database Payload File{id='sample_input_payload_data'}
 
 NOTE: Although the full contents of the sample payload file are shown below, you can also download the file directly from the [data subdirectory of this repo](./data/010_Paylocity_sample_payload_for_DB_loading.txt).
+
 ```{r ShowPayloadFile}
 library(readr)
 library(here)
@@ -267,7 +268,6 @@ library(here)
 sampleText <- readr::read_lines(here::here("data/010_Paylocity_sample_payload_for_DB_loading.txt"))
 knitr::asis_output(paste0("     ", sampleText, "\n"))
 ```
-
 
 
 ::: {style="height: 5em;"}

@@ -1,6 +1,6 @@
 <div style="font-size: 1em;">
 
-Last updated on 2021-12-01 18:51:48
+Last updated on 2021-12-03 10:21:45
 
 </div>
 
@@ -171,9 +171,10 @@ items.
 **NOTE**: You are free to add additional columns to your models as you
 see fit for the purpose of testing your application.
 
-A [sample input file](#sample_input_payload_data) is provided for you.
-When processing this file, your code should print an output similar to
-what is shown here.
+A [sample input
+file](./data/010_Paylocity_sample_payload_for_DB_loading.txt)) is
+provided for you. When processing this file, your code should print an
+output similar to what is shown here.
 
 ------------------------------------------------------------------------
 

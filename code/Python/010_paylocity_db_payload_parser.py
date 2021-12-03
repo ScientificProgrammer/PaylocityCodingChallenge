@@ -7,7 +7,8 @@ import pprint as pp
 
 if len(sys.argv) != 3:
   print("ERROR:")
-  print("\t", sys.argv[0], "must be called with exactly 2 parameters.")
+  print("\t", sys.argv[0], "must be called with exactly 2 parameters, 'INPUT_PAYLOAD_FILE_PATH' and 'OUTPUT_FILE_PATH'")
+  print("\n\t", "EXAMPLE: must be called with exactly 2 parameters, 'INPUT_PAYLOAD_FILE_PATH' and 'OUTPUT_FILE_PATH'")
   print("\t", "In this instance, it was called with", len(sys.argv) - 1, "parameters.")
 
 #payloadFilename = "D:/GoogleDrive/eric.milgram/Career/Job Prospects/2021-11-09 Paylocity/020 Paylocity Coding Challenge/Paylocity Coding Challenge/data/010_Paylocity_sample_payload_for_DB_loading.txt"

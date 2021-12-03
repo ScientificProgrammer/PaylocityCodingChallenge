@@ -1,6 +1,6 @@
 <div style="font-size: 1em;">
 
-Last updated on 2021-12-03 10:41:10
+Last updated on 2021-12-03 10:50:49
 
 </div>
 
@@ -277,7 +277,10 @@ following actions.
 NOTE: Although the full contents of the sample payload file are shown
 below, you can also download the file directly from the [data
 subdirectory of this
-repo](./data/010_Paylocity_sample_payload_for_DB_loading.txt).
+repo](./data/010_Paylocity_sample_payload_for_DB_loading.txt). Also, the
+[raw
+content](https://raw.githubusercontent.com/ScientificProgrammer/PaylocityCodingChallenge/master/data/010_Paylocity_sample_payload_for_DB_loading.txt)
+of the file can be downloaded directly using https.
 
      { "source_table": "Company",  "action": "INSERT", "timestamp": "100.0",  "guid": "1c898066-858e-406c-a15d-36146c9642de", "name": "Paylocity",  "status": "1" }
      { "source_table": "Company",  "action": "INSERT", "timestamp": "200.0",  "guid": "0090d7b0-b07a-47cd-b295-ff798a6c0613", "name": "Taco Shack", "status": "1" }

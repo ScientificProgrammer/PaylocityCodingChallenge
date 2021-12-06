@@ -68,17 +68,18 @@ Shown below are three tables from a relational database conceptual data model.
 library(kableExtra)
 library(purrr)
 
-dbTables <- vector("list", length = 0)
+dbTables <- vector("list", length = 3)
 
+names(dbTables) <- c("Employee", "Company", "Job")
+  
 dbTables[["Employee"]] <- data.frame(Employee = c("guid", "status", "state"))
 
 dbTables[["Company"]] <- data.frame(Company = c("guid", "name"))
 
-dbTables[["Job"]] <- data.frame(Job = c("guid", "company_guide", "position_guide", "employee_guide"))
+dbTables[["Job"]] <- data.frame(Job = c("guid", "company_guid", "position_guid", "employee_guid"))
 
 htmlTables <- dbTables %>%
   map(function(tbl) {
-    
     tbl %>%  kableExtra::kable()  %>%
       row_spec(0, font_size = 20, color = "white", background = "gray") %>%
        column_spec(1, width = "15em")  %>%
@@ -136,7 +137,7 @@ You're tasked with writing a Python script, which must do the following items.
 
 **NOTE**: You are free to add additional columns to your models as you see fit for the purpose of testing your application.
 
-A sample input file is provided for you. It can be downloaded directly from the [data subdirectory](./data/010_Paylocity_sample_payload_for_DB_loading.txt) of this repo, and it is also available in the Appendix &lpar;see [below](#31-sample-input-database-payload-file), below&rpar; When processing this file, your code should print an output similar to what is shown here.
+A sample input file is provided for you. It can be downloaded directly from the [data subdirectory](./data/010_Paylocity_sample_payload_for_DB_loading.txt) of this repo, and it is also available in the Appendix &lpar;see [below](#31-sample-input-database-payload-file)&rpar;. When processing this file, your code should print an output similar to what is shown here.
 
 ------------------------------------------------------------------------
 

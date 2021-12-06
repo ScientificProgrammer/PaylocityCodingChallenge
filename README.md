@@ -1,6 +1,6 @@
 <div style="font-size: 1em;">
 
-Last updated on 2021-12-03 10:50:49
+Last updated on 2021-12-06 09:33:01
 
 </div>
 
@@ -110,13 +110,13 @@ model.
    <td style="text-align:left;width: 15em; "> guid </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 15em; "> company_guide </td>
+   <td style="text-align:left;width: 15em; "> company_guid </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 15em; "> position_guide </td>
+   <td style="text-align:left;width: 15em; "> position_guid </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 15em; "> employee_guide </td>
+   <td style="text-align:left;width: 15em; "> employee_guid </td>
   </tr>
 </tbody>
 </table>
@@ -175,9 +175,8 @@ A sample input file is provided for you. It can be downloaded directly
 from the [data
 subdirectory](./data/010_Paylocity_sample_payload_for_DB_loading.txt) of
 this repo, and it is also available in the Appendix (see
-[below](#31-sample-input-database-payload-file)). When processing
-this file, your code should print an output similar to what is shown
-here.
+[below](#31-sample-input-database-payload-file)). When processing this
+file, your code should print an output similar to what is shown here.
 
 ------------------------------------------------------------------------
 

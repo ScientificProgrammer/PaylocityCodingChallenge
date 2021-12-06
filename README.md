@@ -175,7 +175,7 @@ A sample input file is provided for you. It can be downloaded directly
 from the [data
 subdirectory](./data/010_Paylocity_sample_payload_for_DB_loading.txt) of
 this repo, and it is also available in the Appendix (see
-[below](#31-sample-input-database-payload-file), below) When processing
+[below](#31-sample-input-database-payload-file)) When processing
 this file, your code should print an output similar to what is shown
 here.
 

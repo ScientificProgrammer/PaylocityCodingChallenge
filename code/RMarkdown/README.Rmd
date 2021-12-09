@@ -62,7 +62,7 @@ The expectation is that the candidate will complete the `Python` exercise ahead 
 
 ## MULTI-PART SQL EXERCISE: LIVE WALK-THROUGH
 
-Shown below are three tables from a relational database conceptual data model.
+Depicted here are four tables from a relational database conceptual data model.
 
 ```{r TableSet1}
 library(kableExtra)

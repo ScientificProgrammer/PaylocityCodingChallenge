@@ -1,6 +1,6 @@
 <div style="font-size: 1em;">
 
-Last updated on 2021-12-08 21:43:46
+Last updated on 2021-12-08 21:47:17
 
 </div>
 
@@ -51,7 +51,7 @@ code and show it running on their machine.
 
 ## 1.2 MULTI-PART SQL EXERCISE: LIVE WALK-THROUGH
 
-Shown below are three tables from a relational database conceptual data
+Depicted here are four tables from a relational database conceptual data
 model.
 
 <div style='float: left; margin: 0 1em 0 1em;'>

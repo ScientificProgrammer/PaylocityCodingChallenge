@@ -17,6 +17,8 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+library(here)
+
 knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = FALSE)
 ```
 
@@ -62,9 +64,21 @@ The expectation is that the candidate will complete the `Python` exercise ahead 
 
 ## MULTI-PART SQL EXERCISE: LIVE WALK-THROUGH
 
-Depicted here are four tables from a relational database conceptual data model.
+The following figure shows an *entity relationship diagram* (ERD) for a conceptual
+data model containing 4 tables.
 
-```{r TableSet1}
+1. Company
+
+1. Position
+
+1. Employee
+
+1. Job
+
+![](`r here("./img/Figure 200-030 - DB ERD - Company - Position - Employee - Job 1000x800.png")`)
+
+
+```{r TableSet1, eval = FALSE}
 library(kableExtra)
 library(purrr)
 

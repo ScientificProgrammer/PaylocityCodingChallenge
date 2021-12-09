@@ -1,6 +1,6 @@
 <div style="font-size: 1em;">
 
-Last updated on 2021-12-08 21:50:22
+Last updated on 2021-12-08 22:02:40
 
 </div>
 
@@ -51,103 +51,18 @@ code and show it running on their machine.
 
 ## 1.2 MULTI-PART SQL EXERCISE: LIVE WALK-THROUGH
 
-Depicted here are four tables from a relational database conceptual data
-model.
+The following figure shows an *entity relationship diagram* (ERD) for a
+conceptual data model containing 4 tables.
 
-<div style='float: left; margin: 0 1em 0 1em;'>
+1.  Company
 
-<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;color: white !important;background-color: gray !important;font-size: 20px;"> Company </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;width: 15em; "> guid </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 15em; "> name </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 15em; "> status </td>
-  </tr>
-</tbody>
-</table>
+2.  Position
 
-</div>
+3.  Employee
 
-<div style='float: left; margin: 0 1em 0 1em;'>
+4.  Job
 
-<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;color: white !important;background-color: gray !important;font-size: 20px;"> Position </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;width: 15em; "> guid </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 15em; "> name </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 15em; "> status </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-
-<div style='float: left; margin-right: 1em;'>
-
-<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;color: white !important;background-color: gray !important;font-size: 20px;"> Employee </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;width: 15em; "> guid </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 15em; "> state </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 15em; "> status </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-
-<div style='float: left; margin: 0 1em 0 1em;'>
-
-<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;color: white !important;background-color: gray !important;font-size: 20px;"> Job </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;width: 15em; "> guid </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 15em; "> company_guid </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 15em; "> position_guid </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 15em; "> employee_guid </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
+![](D:/GoogleDrive/eric.milgram/Career/Job%20Prospects/2021-11-09%20Paylocity/020%20Paylocity%20Coding%20Challenge/Paylocity%20Coding%20Challenge/./img/Figure%20200-030%20-%20DB%20ERD%20-%20Company%20-%20Position%20-%20Employee%20-%20Job%201000x800.png)
 
 <div style="clear: both;">
 

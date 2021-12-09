@@ -68,13 +68,15 @@ Shown below are three tables from a relational database conceptual data model.
 library(kableExtra)
 library(purrr)
 
-dbTables <- vector("list", length = 3)
+dbTables <- vector("list", length = 4)
 
-names(dbTables) <- c("Employee", "Company", "Job")
+names(dbTables) <- c("Company", "Position", "Employee", "Job")
   
-dbTables[["Employee"]] <- data.frame(Employee = c("guid", "status", "state"))
-
 dbTables[["Company"]] <- data.frame(Company = c("guid", "name"))
+
+dbTables[["Position"]] <- data.frame(Company = c("guid", "name", "status"))
+
+dbTables[["Employee"]] <- data.frame(Employee = c("guid", "state", "status"))
 
 dbTables[["Job"]] <- data.frame(Job = c("guid", "company_guid", "position_guid", "employee_guid"))
 
@@ -89,12 +91,16 @@ htmlTables <- dbTables %>%
       )
   })
 
-knitr::raw_html("<div style='float: left; margin-right: 1em;'>\n")
-knitr::raw_html(htmlTables[["Employee"]])
+knitr::raw_html("<div style='float: left; margin: 0 1em 0 1em;'>\n")
+knitr::raw_html(htmlTables[["Company"]])
 knitr::raw_html("\n</div>\n")
 
 knitr::raw_html("<div style='float: left; margin: 0 1em 0 1em;'>\n")
-knitr::raw_html(htmlTables[["Company"]])
+knitr::raw_html(htmlTables[["Position"]])
+knitr::raw_html("\n</div>\n")
+
+knitr::raw_html("<div style='float: left; margin-right: 1em;'>\n")
+knitr::raw_html(htmlTables[["Employee"]])
 knitr::raw_html("\n</div>\n")
 
 knitr::raw_html("<div style='float: left; margin: 0 1em 0 1em;'>\n")
@@ -145,6 +151,13 @@ A sample input file is provided for you. It can be downloaded directly from the 
     ==========
     {'guid': '1c898066-858e-406c-a15d-36146c9642de', 'name': 'Paylocity', 'status': '2'}
     {'guid': '0090d7b0-b07a-47cd-b295-ff798a6c0613', 'name': 'Burrito Shack', 'status': '2'}
+    
+------------------------------------------------------------------------    
+
+    Position
+    ==========
+    {'guid': '40a36493-f450-4331-874c-5ef01aabe1d5', 'name': 'Software Engineer', 'status': '1'}
+    {'guid': 'f9b3ee71-7fb2-4dd5-9c13-b4c10d11fde7', 'name': 'Data Engineer',     'status': '1'}
 
 ------------------------------------------------------------------------
 
@@ -162,13 +175,6 @@ A sample input file is provided for you. It can be downloaded directly from the 
     {'guid': '58291fe5-4e4c-41da-87a5-e1fccb8aac25', 'company_guid': '1c898066-858e-406c-a15d-36146c9642de', 'employee_guid': 'e086115c-0ca1-480c-8fa8-5e1773558b9f'}
     {'guid': 'f73a2796-4579-4779-8345-f0dfcf7dd533', 'company_guid': '0090d7b0-b07a-47cd-b295-ff798a6c0613', 'employee_guid': '4e0c8c17-b031-4a72-b73d-f0a85570826d'}
     {'guid': '5ab54bb5-b72d-40f8-9a49-e0d2d004d7a9', 'company_guid': '0090d7b0-b07a-47cd-b295-ff798a6c0613', 'employee_guid': '259d5154-5f76-481b-b0f9-53e24c3b570e'}
-
-------------------------------------------------------------------------
-
-    Position
-    ==========
-    {'guid': '40a36493-f450-4331-874c-5ef01aabe1d5', 'name': 'Software Engineer', 'status': '1'}
-    {'guid': 'f9b3ee71-7fb2-4dd5-9c13-b4c10d11fde7', 'name': 'Data Engineer',     'status': '1'}
 
 ------------------------------------------------------------------------
 

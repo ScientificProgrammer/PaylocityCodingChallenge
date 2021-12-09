@@ -1,6 +1,6 @@
 <div style="font-size: 1em;">
 
-Last updated on 2021-12-06 09:33:01
+Last updated on 2021-12-08 21:43:46
 
 </div>
 
@@ -54,12 +54,12 @@ code and show it running on their machine.
 Shown below are three tables from a relational database conceptual data
 model.
 
-<div style='float: left; margin-right: 1em;'>
+<div style='float: left; margin: 0 1em 0 1em;'>
 
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:left;color: white !important;background-color: gray !important;font-size: 20px;"> Employee </th>
+   <th style="text-align:left;color: white !important;background-color: gray !important;font-size: 20px;"> Company </th>
   </tr>
  </thead>
 <tbody>
@@ -67,10 +67,7 @@ model.
    <td style="text-align:left;width: 15em; "> guid </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 15em; "> status </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;width: 15em; "> state </td>
+   <td style="text-align:left;width: 15em; "> name </td>
   </tr>
 </tbody>
 </table>
@@ -91,6 +88,32 @@ model.
   </tr>
   <tr>
    <td style="text-align:left;width: 15em; "> name </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 15em; "> status </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+
+<div style='float: left; margin-right: 1em;'>
+
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: gray !important;font-size: 20px;"> Employee </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;width: 15em; "> guid </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 15em; "> state </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 15em; "> status </td>
   </tr>
 </tbody>
 </table>
@@ -187,6 +210,13 @@ file, your code should print an output similar to what is shown here.
 
 ------------------------------------------------------------------------
 
+    Position
+    ==========
+    {'guid': '40a36493-f450-4331-874c-5ef01aabe1d5', 'name': 'Software Engineer', 'status': '1'}
+    {'guid': 'f9b3ee71-7fb2-4dd5-9c13-b4c10d11fde7', 'name': 'Data Engineer',     'status': '1'}
+
+------------------------------------------------------------------------
+
     Employee
     ==========
     {'guid': 'e086115c-0ca1-480c-8fa8-5e1773558b9f', 'state': 'FL', 'status': '2'}
@@ -201,13 +231,6 @@ file, your code should print an output similar to what is shown here.
     {'guid': '58291fe5-4e4c-41da-87a5-e1fccb8aac25', 'company_guid': '1c898066-858e-406c-a15d-36146c9642de', 'employee_guid': 'e086115c-0ca1-480c-8fa8-5e1773558b9f'}
     {'guid': 'f73a2796-4579-4779-8345-f0dfcf7dd533', 'company_guid': '0090d7b0-b07a-47cd-b295-ff798a6c0613', 'employee_guid': '4e0c8c17-b031-4a72-b73d-f0a85570826d'}
     {'guid': '5ab54bb5-b72d-40f8-9a49-e0d2d004d7a9', 'company_guid': '0090d7b0-b07a-47cd-b295-ff798a6c0613', 'employee_guid': '259d5154-5f76-481b-b0f9-53e24c3b570e'}
-
-------------------------------------------------------------------------
-
-    Position
-    ==========
-    {'guid': '40a36493-f450-4331-874c-5ef01aabe1d5', 'name': 'Software Engineer', 'status': '1'}
-    {'guid': 'f9b3ee71-7fb2-4dd5-9c13-b4c10d11fde7', 'name': 'Data Engineer',     'status': '1'}
 
 ------------------------------------------------------------------------
 

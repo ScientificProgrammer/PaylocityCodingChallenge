@@ -1,6 +1,6 @@
 <div style="font-size: 1em;">
 
-Last updated on 2021-12-08 22:02:40
+Last updated on 2021-12-08 22:06:01
 
 </div>
 
@@ -62,7 +62,7 @@ conceptual data model containing 4 tables.
 
 4.  Job
 
-![](D:/GoogleDrive/eric.milgram/Career/Job%20Prospects/2021-11-09%20Paylocity/020%20Paylocity%20Coding%20Challenge/Paylocity%20Coding%20Challenge/./img/Figure%20200-030%20-%20DB%20ERD%20-%20Company%20-%20Position%20-%20Employee%20-%20Job%201000x800.png)
+![](./img/Figure%20200-030%20-%20DB%20ERD%20-%20Company%20-%20Position%20-%20Employee%20-%20Job%201000x800.png)
 
 <div style="clear: both;">
 

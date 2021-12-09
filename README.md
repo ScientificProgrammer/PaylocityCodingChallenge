@@ -1,6 +1,6 @@
 <div style="font-size: 1em;">
 
-Last updated on 2021-12-08 21:47:17
+Last updated on 2021-12-08 21:50:22
 
 </div>
 
@@ -69,6 +69,9 @@ model.
   <tr>
    <td style="text-align:left;width: 15em; "> name </td>
   </tr>
+  <tr>
+   <td style="text-align:left;width: 15em; "> status </td>
+  </tr>
 </tbody>
 </table>
 
@@ -79,7 +82,7 @@ model.
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:left;color: white !important;background-color: gray !important;font-size: 20px;"> Company </th>
+   <th style="text-align:left;color: white !important;background-color: gray !important;font-size: 20px;"> Position </th>
   </tr>
  </thead>
 <tbody>

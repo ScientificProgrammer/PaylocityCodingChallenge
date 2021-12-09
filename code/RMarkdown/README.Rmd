@@ -72,9 +72,9 @@ dbTables <- vector("list", length = 4)
 
 names(dbTables) <- c("Company", "Position", "Employee", "Job")
   
-dbTables[["Company"]] <- data.frame(Company = c("guid", "name"))
+dbTables[["Company"]] <- data.frame(Company = c("guid", "name", "status"))
 
-dbTables[["Position"]] <- data.frame(Company = c("guid", "name", "status"))
+dbTables[["Position"]] <- data.frame(Position = c("guid", "name", "status"))
 
 dbTables[["Employee"]] <- data.frame(Employee = c("guid", "state", "status"))
 

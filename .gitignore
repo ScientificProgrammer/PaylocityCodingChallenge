@@ -47,3 +47,9 @@ docs/
 
 # translation temp files
 po/*~
+
+# Files to be deleted, but not immediately
+Deprecated/
+
+# SQL Files used just for experimenting
+/code/SQL/SQL Examples/

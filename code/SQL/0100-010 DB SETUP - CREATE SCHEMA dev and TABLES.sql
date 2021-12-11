@@ -20,7 +20,8 @@
   (
       guid        uuid          PRIMARY KEY,
       name        varchar(50)   NOT NULL UNIQUE,
-      status      integer       NOT NULL
+      status      integer       NOT NULL,
+      created     timestamp     NOT NULL DEFAULT NOW()
   );
 
 
@@ -31,7 +32,8 @@
   (
       guid        uuid          PRIMARY KEY,
       name        varchar(50)   NOT NULL UNIQUE,
-      status      integer       NOT NULL
+      status      integer       NOT NULL,
+      created     timestamp     NOT NULL DEFAULT NOW()
   );
 
 -- ############################################################################
@@ -41,7 +43,8 @@
   (
       guid        uuid          PRIMARY KEY,
       state       varchar(50)   NOT NULL,
-      status      integer       NOT NULL
+      status      integer       NOT NULL,
+      created     timestamp     NOT NULL DEFAULT NOW()
   );
 
 -- ############################################################################
@@ -53,6 +56,7 @@
       company_guid      uuid             NOT NULL,
       position_guid     uuid             NOT NULL,
       employee_guid     uuid             NOT NULL,
+      created           timestamp        NOT NULL DEFAULT NOW(),
       CONSTRAINT Job_PK                  PRIMARY KEY (guid),
       CONSTRAINT Job_FK_company_guid     FOREIGN KEY (company_guid)  REFERENCES Company  (guid),
       CONSTRAINT Job_FK_position_guid    FOREIGN KEY (position_guid) REFERENCES Position (guid),

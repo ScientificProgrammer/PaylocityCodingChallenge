@@ -1,3 +1,15 @@
+-- AUTHOR: Eric MIlgram, PhD
+-- 
+-- DATE: 09 Dec 2021
+--
+-- PURPOSE 
+-- The purpose of these SQL statements is to create the pccdev ROLE
+-- for the PostgreSQL database used for the Paylocity Coding Challenge.
+--
+-- ############################################################################
+-- Create the 'dev' schema, which is for DB development only
+-- ############################################################################
+
 -- ############################################################################
 -- CREATE pccdev ROLE, then GRANT the ROLE permission to connect to the DB.
 -- ############################################################################

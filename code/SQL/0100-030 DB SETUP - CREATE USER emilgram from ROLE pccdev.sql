@@ -1,3 +1,14 @@
+-- AUTHOR: Eric MIlgram, PhD
+-- 
+-- DATE: 09 Dec 2021
+--
+-- PURPOSE 
+-- The purpose of these SQL statements is to create a developer user
+-- for the PostgreSQL database used for the Paylocity Coding Challenge.
+--
+-- ############################################################################
+-- Create the 'dev' schema, which is for DB development only
+-- ############################################################################
 -- ############################################################################
 -- Create the first user of the 'dev' schema.
 -- ############################################################################

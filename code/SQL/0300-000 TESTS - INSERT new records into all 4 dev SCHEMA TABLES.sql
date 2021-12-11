@@ -13,7 +13,6 @@
 -- ############################################################################
 SET search_path TO dev;
 
-
 -- ############################################################################
 -- Start the transaction before any inserts and only commit it if all
 -- inserts work properly.

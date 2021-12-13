@@ -51,5 +51,8 @@ po/*~
 # Files to be deleted, but not immediately
 Deprecated/
 
+# Files that I want to backup on my Google Drive, but not in my git repo
+gitignore_files/
+
 # SQL Files used just for experimenting
 /code/SQL/SQL Examples/

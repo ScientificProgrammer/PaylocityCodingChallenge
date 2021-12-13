@@ -75,7 +75,7 @@ data model containing 4 tables.
 
 1. Job
 
-![](./img/Figure 200-030 - DB ERD - Company - Position - Employee - Job 1000x800.png)
+![](./img/Figure - PGAdmin Tool - ERD for DB.pgerd 800x800.png)
 
 
 ```{r TableSet1, eval = FALSE}

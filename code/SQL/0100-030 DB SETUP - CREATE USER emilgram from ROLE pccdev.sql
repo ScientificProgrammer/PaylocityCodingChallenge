@@ -24,6 +24,6 @@
   SET search_path TO dev;
 
 -- ############################################################################
--- CREATE Table: Company
+-- Change the search path to the 'dev' schema
 -- ############################################################################
   SET SCHEMA 'dev';

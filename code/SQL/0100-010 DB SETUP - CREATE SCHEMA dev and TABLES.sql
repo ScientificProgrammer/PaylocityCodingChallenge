@@ -15,8 +15,12 @@
   COMMENT ON SCHEMA dev IS 'The dev schema for Paylocity Coding Challenge developers';
 
   SET search_path TO dev;
+
+-- ############################################################################
+-- Create the company table
+-- ############################################################################
   
-  CREATE TABLE IF NOT EXISTS Company
+  CREATE TABLE company
   (
       guid        uuid          PRIMARY KEY,
       name        varchar(50)   NOT NULL UNIQUE,
@@ -26,9 +30,9 @@
 
 
 -- ############################################################################
--- Create the Position table
+-- Create the position table
 -- ############################################################################
-  CREATE TABLE IF NOT EXISTS Position
+  CREATE TABLE position
   (
       guid        uuid          PRIMARY KEY,
       name        varchar(50)   NOT NULL UNIQUE,
@@ -37,9 +41,9 @@
   );
 
 -- ############################################################################
--- Create the Employee table
+-- Create the employee table
 -- ############################################################################
-  CREATE TABLE IF NOT EXISTS Employee
+  CREATE TABLE employee
   (
       guid        uuid          PRIMARY KEY,
       state       varchar(50)   NOT NULL,
@@ -48,21 +52,19 @@
   );
 
 -- ############################################################################
--- Create the Job table
+-- Create the job table
 -- ############################################################################
-  CREATE TABLE IF NOT EXISTS Job
+  CREATE TABLE job
   (
       guid              uuid             NOT NULL,
       company_guid      uuid             NOT NULL,
-      position_guid     uuid             NOT NULL,
       employee_guid     uuid             NOT NULL,
       created           timestamp        NOT NULL DEFAULT NOW(),
-      CONSTRAINT Job_PK                  PRIMARY KEY (guid),
-      CONSTRAINT Job_FK_company_guid     FOREIGN KEY (company_guid)  REFERENCES Company  (guid),
-      CONSTRAINT Job_FK_position_guid    FOREIGN KEY (position_guid) REFERENCES Position (guid),
-      CONSTRAINT Job_FK_employee_guid    FOREIGN KEY (employee_guid) REFERENCES Employee (guid),
-      CONSTRAINT Job_unique_comp_pos_emp UNIQUE      (company_guid, position_guid, employee_guid)
+      CONSTRAINT job_PK                  PRIMARY KEY (guid),
+      CONSTRAINT job_FK_company_guid     FOREIGN KEY (company_guid)  REFERENCES company  (guid),
+      CONSTRAINT job_FK_employee_guid    FOREIGN KEY (employee_guid) REFERENCES employee (guid),
+      CONSTRAINT job_unique_comp_emp UNIQUE      (company_guid, employee_guid)
   );
   
-  COMMENT ON CONSTRAINT Job_unique_comp_pos_emp ON Job
+  COMMENT ON CONSTRAINT job_unique_comp_emp ON job
   IS 'Prevent same person from having same job at same company';

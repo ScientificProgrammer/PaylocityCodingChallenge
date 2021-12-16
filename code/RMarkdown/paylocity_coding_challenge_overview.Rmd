@@ -1,12 +1,12 @@
 ---
-title: "Paylocity Coding Challenge: README"
+title: "Paylocity Coding Challenge: Overview of the coding challenge"
 author: "Eric Milgram, PhD"
 date: "December 15, 2021"
 knit: (function(inputFile, encoding) {
         rmarkdown::render(
               input = inputFile,
               encoding = encoding,
-              output_dir = here::here("."))
+              output_dir = here::here("./code/Markdown"))
         }
       )
 output:

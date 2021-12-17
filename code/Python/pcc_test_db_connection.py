@@ -7,18 +7,39 @@
 
   APPLICATION:   Paylocity Coding Challenge
 
-  DEPENDENCIES:  1) NON-STANDARD PYTHON MODULES
-                    a) pcc_config_parser.py
+  DEPENDENCIES:  1) NON-STANDARD PYTHON MODULES - PUBLICLY AVAILABLE
+                    a) psycopg2               This package does the heavy lifting for connecting to a
+                                              PostgreSQL database server. Visit
+                                              https://pypi.org/project/psycopg2/
+                                              for more details about how to install 'psycopg2' for your
+                                              implementation.
 
-                 2) A valid database configuration file. See the help for 'pcc_config_parser.py' for more information. 
+                  2) NON-STANDARD PYTHON MODULES - CUSTOM
+
+                    b) pcc_config_parser.py   Wrapper for configparser.ConfigParser
+
+                 2) A valid database configuration file. See the help for 'pcc_config_parser.py' for more information.
                  
 """
-
 import os.path
 import sys
 import psycopg2
 from pcc_config_parser import config
+from pathlib import PurePath
 
+class CustomError(Exception):
+  """
+     Base class for derived Exception classes used in this module.
+  """
+
+class InvalidNumCmdLineArgsError(CustomError):
+  """
+    Thrown when this module is called directly with an invalid number
+    of command line arguments.
+  """
+  def __init__(self, message):
+    self.message = message
+  
 def connect(configfilename = 'database.ini', configfilesection = 'postgresql'):
   """
     PURPOSE:
@@ -53,7 +74,7 @@ def connect(configfilename = 'database.ini', configfilesection = 'postgresql'):
 
             6) Close the database cursor.
 
-            7) Close the database cursor.
+            7) Close the database connection.
 
     ACKNOWLEDGMENTS:
             This code was adapted from the following web-page.
@@ -93,32 +114,62 @@ def connect(configfilename = 'database.ini', configfilesection = 'postgresql'):
       print('Database connection closed.')
  
 if __name__ == "__main__":
-  help_msg = "For more information about this module, type help({0}) from within the interactive Python environment.".format(sys.argv[0])
+  mod_name = PurePath(sys.argv[0]).stem
+  # help_msg = """
+
+  #    For more information about using this module, enter the interactive Python environment and type the following commands.
+  #      >>>import {0}
+  #      >>> help({0}) 
+
+  #   """.format(mod_name)
+  # print(help_msg)
+
   num_args = len(sys.argv) - 1
 
   if num_args == 0:
-    print("No command line arguments were given. Connecting with default parameters.")
-    print("DEFAULT FILENAME: database.ini")
-    print("DEFAULT SECTION:  postgresql")
+    msg = """
+  ------------------------------------------------------------------------------
+    No command line arguments were furnished. Attempting to connect
+    to the PostgreSQL DB with the following default parameters.
+
+        FILENAME: 'database.ini'                    (default)
+        SECTION:  'postgresql'                      (default)
+  ------------------------------------------------------------------------------
+      """
+    print(msg)
     connect()
 
   elif num_args == 1:
-    print("Database ini file path is......................{0}".format(sys.argv[1]))
-    connect(sys.argv[1])  
+    msg = """
+  ------------------------------------------------------------------------------
+      One command line argument was given. Attempting to connect to the
+      PostgreSQL DB with the following parameters.
+
+        FILENAME: {0}
+        SECTION:  'postgresql'                      (default)
+  ------------------------------------------------------------------------------
+      """.format(sys.argv[1])
+    print(msg)
+    connect(sys.argv[1])
 
   elif num_args == 2:
-    print("Database ini file path is......................{0}".format(sys.argv[1]))
-    print("Section of database ini file to process is.....{0}".format(sys.argv[2]))
+    msg = """
+  ------------------------------------------------------------------------------
+      One command line argument was given. Attempting to connect to the
+      PostgreSQL DB with the following parameters.
+
+        FILENAME: {0}
+        SECTION:  {1}
+  ------------------------------------------------------------------------------
+      """.format(sys.argv[1], sys.argv[2])
+    print(msg)
     connect(sys.argv[1], sys.argv[2])
 
   else:
-    err_msg  = "ERROR: An invalid number of command line args were given.\n"
-    err_msg += "       For more information, please see the help documentation\n"
-    err_msg += "       for this module, '{0}' and\n".format(sys.argv[0])
-    err_msg += "       'pcc_config_parser.py'. If you are running Python interactively,\n"
-    err_msg += "       try the following from the command prompt.\n"
-    err_msg += "       \n"
-    err_msg += "       help({0})\n".format(sys.argv[0])
-    err_msg += "       help(pcc_config_parser)\n"
-    err_msg += "       \n"
-    raise Exception(err_msg)
+    err_msg = """
+  ------------------------------------------------------------------------------
+      ERROR: An invalid number of command line args were given.
+             This module should be called with 0, 1, or 2 parameters.
+  ------------------------------------------------------------------------------
+    """.format(mod_name)
+    raise InvalidNumCmdLineArgsError(err_msg)

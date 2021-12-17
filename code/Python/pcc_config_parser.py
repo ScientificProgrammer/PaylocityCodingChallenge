@@ -12,8 +12,77 @@
 """
 
 import sys
-import os.path
+import os
+import errno
 from configparser import ConfigParser
+
+class CustomError(Exception):
+    """Base class for exceptions defined in this module."""
+    pass
+
+class ConfigFileNotFoundError(CustomError):
+  """
+    Exception raised if the target 'config' file cannot be found.
+
+    Attributes:
+        config_filename    --Name of the file that was attempted to be parsed.
+
+        long_message       --A more detailed error message
+
+        message             --Concise error message
+  """
+  def __init__(self, config_filename):
+      self.config_filename = config_filename
+      self.message = """
+  ************************************************************************************
+    ERROR ATTEMPTING TO READ DATABASE CONFIGURATION FILE 
+  ************************************************************************************
+      ERROR CODE: '{1}'
+      ERROR MSG:  '{2}'
+      FILENAME:   '{0}'
+                           
+            The specified database configuration file could not be located.
+            Please ensure that the file exists and you have read
+            permissions for it.
+  ************************************************************************************
+        """.format(config_filename, errno.ENOENT, os.strerror(errno.ENOENT))
+      super().__init__(self.message)
+
+class InvalidConfigSectionError(CustomError):
+  """
+    Exception raised if the target 'section' is not found
+    in a file to be parsed.
+
+    Attributes:
+        config_filename    --Name of the file that was attempted to be parsed. 
+
+        section_name       --The name of the targer 'section' that was not found in the config file.
+
+        message            --Concise error message
+  """
+  def __init__(self, config_filename, section_name):
+      self.config_filename = config_filename
+      self.section_name = section_name
+      self.message = """
+  ************************************************************************************
+    ERROR ATTEMPTING TO PARSE DATABASE CONFIGURATION FILE
+  ************************************************************************************
+      FILENAME: '{0}'
+      FILE SECTION: '{1}'
+                           
+            The database configuration file was located. However, either
+              1) the specified section could not be found within the file, or
+
+              2) it contained invalid information.
+
+            Please open the file and confirm that the configuration section
+            exists and contains valid values. For more information,
+            review the help information located in
+              help(pcc_config_parser.config)
+            or review the documentation for the standard Python'configparser'.
+  ************************************************************************************
+        """.format(config_filename, section_name)
+      super().__init__(self.message)
 
 def config(filename = 'database.ini', section = 'postgresql'):
   """
@@ -76,7 +145,7 @@ def config(filename = 'database.ini', section = 'postgresql'):
             
   """
   if not os.path.exists(filename):
-    raise Exception("Unable to find a file with name of '{0}'".format(filename))
+    raise ConfigFileNotFoundError(filename)
 
   # create a parser
   parser = ConfigParser()
@@ -94,7 +163,7 @@ def config(filename = 'database.ini', section = 'postgresql'):
       db[param[0]] = param[1]
 
   else:
-    raise Exception('Section {0} not found in the {1} file'.format(section, filename))
+    raise InvalidConfigSectionError(config_filename = filename, section_name = section)
 
   return db
 

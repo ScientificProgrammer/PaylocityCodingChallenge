@@ -29,7 +29,7 @@
 <!--         Date of Last Update: -->
 <!--       </td> -->
 <!--       <td> -->
-<!--         ``2021-12-27 15:55:41`` -->
+<!--         ``2021-12-27 16:03:03`` -->
 <!--       </td> -->
 <!--     </tr> -->
 <!--   </tbody> -->
@@ -39,29 +39,65 @@
 
 <div class="titleBoxRow">
 
-    <div class="titleBoxItemDescriptor">Github Repo Name:</div>
-    <div class="titleBoxItemValue">[ScientificProgrammer/PaylocityCodingChallenge]("https://github.com/ScientificProgrammer/PaylocityCodingChallenge")</div>
+<div class="titleBoxItemDescriptor">
+
+Github Repo Name:
+
+</div>
+
+<div class="titleBoxItemValue">
+
+[ScientificProgrammer/PaylocityCodingChallenge](%22https://github.com/ScientificProgrammer/PaylocityCodingChallenge%22)
+
+</div>
 
 </div>
 
 <div class="titleBoxRow">
 
-    <div class="titleBoxItemDescriptor">Creator:</div>
-    <div class="titleBoxItemValue">Eric Milgram, PhD</div>
+<div class="titleBoxItemDescriptor">
+
+Creator:
+
+</div>
+
+<div class="titleBoxItemValue">
+
+Eric Milgram, PhD
+
+</div>
 
 </div>
 
 <div class="titleBoxRow">
 
-    <div class="titleBoxItemDescriptor">Document Creation Date:</div>
-    <div class="titleBoxItemValue">December 23, 2021</div>
+<div class="titleBoxItemDescriptor">
+
+Document Creation Date:
+
+</div>
+
+<div class="titleBoxItemValue">
+
+December 23, 2021
+
+</div>
 
 </div>
 
 <div class="titleBoxRow">
 
-    <div class="titleBoxItemDescriptor">Date of Last Update:</div>
-    <div class="titleBoxItemValue">``2021-12-27 15:55:41``</div>
+<div class="titleBoxItemDescriptor">
+
+Date of Last Update:
+
+</div>
+
+<div class="titleBoxItemValue">
+
+`2021-12-27 16:03:03`
+
+</div>
 
 </div>
 
@@ -179,9 +215,6 @@ CloudWatch Monitoring
 HIGHLIGHT PORTIONS OF MY PYTHON CODE IN THE EXPLANATION OF MY CODING
 SOLUTION
 </p>
-</li>
-<li>
-<li>
 <ul>
 <li>
 <p>
@@ -200,7 +233,6 @@ USE MY ERD TO ILLUSTRATE THE PROBLEM
 </p>
 </li>
 <ul>
-</li>
 </li>
 </ol>
 </li>

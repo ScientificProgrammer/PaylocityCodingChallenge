@@ -94,22 +94,22 @@ knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = 
 
 
 <div id="titleBox">
-  <div class="titleBoxRow">
-    <div class="titleBoxItemDescriptor">Github Repo Name:</div>
-    <div class="titleBoxItemValue">[ScientificProgrammer/PaylocityCodingChallenge]("https://github.com/ScientificProgrammer/PaylocityCodingChallenge")</div>
-  </div>
-  <div class="titleBoxRow">
-    <div class="titleBoxItemDescriptor">Creator:</div>
-    <div class="titleBoxItemValue">Eric Milgram, PhD</div>
-  </div>
-  <div class="titleBoxRow">
-    <div class="titleBoxItemDescriptor">Document Creation Date:</div>
-    <div class="titleBoxItemValue">December 23, 2021</div>
-  </div>
-  <div class="titleBoxRow">
-    <div class="titleBoxItemDescriptor">Date of Last Update:</div>
-    <div class="titleBoxItemValue">```r Sys.time()```</div>
-  </div>
+<div class="titleBoxRow">
+<div class="titleBoxItemDescriptor">Github Repo Name:</div>
+<div class="titleBoxItemValue">[ScientificProgrammer/PaylocityCodingChallenge]("https://github.com/ScientificProgrammer/PaylocityCodingChallenge")</div>
+</div>
+<div class="titleBoxRow">
+<div class="titleBoxItemDescriptor">Creator:</div>
+<div class="titleBoxItemValue">Eric Milgram, PhD</div>
+</div>
+<div class="titleBoxRow">
+<div class="titleBoxItemDescriptor">Document Creation Date:</div>
+<div class="titleBoxItemValue">December 23, 2021</div>
+</div>
+<div class="titleBoxRow">
+<div class="titleBoxItemDescriptor">Date of Last Update:</div>
+<div class="titleBoxItemValue">```r Sys.time()```</div>
+</div>
 </div>
 
 # Overview
@@ -162,23 +162,21 @@ Paylocity refers to these exercises as the *Paylocity Coding Challenge*.
             <li>AWS Infrastructure: 1) PG running on RDS, 2) VPC Configuration, 3) CloudWatch Monitoring</li>
           </ul
         </li>
-        <li><p>HIGHLIGHT PORTIONS OF MY PYTHON CODE IN THE EXPLANATION OF MY CODING SOLUTION</p></li>
         <li>
-          <li>
-            <ul>
-              <li><p>DESCRIPTION OF THE INPUT DATA FILE</p></li>
-              <li><p>DESCRIBE THE 'CHALLENGE' WITH THE INPUT DATA FILE AS IT WAS FURNISHED AND THE DATA MODEL</p></li>
-              <li><p>USE MY ERD TO ILLUSTRATE THE PROBLEM</p></li>
-            <ul>
-          </li>
+          <p>HIGHLIGHT PORTIONS OF MY PYTHON CODE IN THE EXPLANATION OF MY CODING SOLUTION</p>
+          <ul>
+            <li><p>DESCRIPTION OF THE INPUT DATA FILE</p></li>
+            <li><p>DESCRIBE THE 'CHALLENGE' WITH THE INPUT DATA FILE AS IT WAS FURNISHED AND THE DATA MODEL</p></li>
+            <li><p>USE MY ERD TO ILLUSTRATE THE PROBLEM</p></li>
+          <ul>
         </li>
       </ol>
-      </li>
-      <li>
-        <p>EXERCISE 2 OF 2: SQL EXERCISES</p>
-        <ol>
-          <li><a href='https://example.com'>LINK-NOT-IMPLEMENTED-YET</a></li>
-        </ol>
+    </li>
+    <li>
+      <p>EXERCISE 2 OF 2: SQL EXERCISES</p>
+      <ol>
+        <li><a href='https://example.com'>LINK-NOT-IMPLEMENTED-YET</a></li>
+      </ol>
     </li>
   </ol>
 </div>

@@ -1,5 +1,5 @@
 ---
-title: "Paylocity Coding Challenge: Overview of the coding challenge"
+title: "Paylocity Coding Challenge: Challenge Overview"
 author: "Eric Milgram, PhD"
 date: "December 15, 2021"
 knit: (function(inputFile, encoding) {

@@ -1,9 +1,98 @@
-# Files to be deleted, but not immediately
+###############################################################################
+# Project Specific Items                                                      #
+###############################################################################
+
+# Files to be deleted, but not immediately                                 
+# --------------------------------------------------------------------------
 Deprecated/
 
 # Files that I want to backup on my Google Drive, but not in my git repo
+# --------------------------------------------------------------------------
 gitignore_files/
 
 # SQL Files used just for experimenting
+# --------------------------------------------------------------------------
 /code/SQL/SQL Examples/
 
+###############################################################################
+# From master .gitignore                                                      #
+###############################################################################
+
+# RStudio Files
+# --------------------------------------------------------------------------
+.Renviron
+.Rhistory
+.Rprofile.backup
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.httr-oauth
+*-Ex.R
+.nb.html
+/*.tar.gz
+/*.Rcheck/
+.Rproj
+.Rproj.user/
+docs/
+po/*~
+vignettes/*.html
+vignettes/*.pdf
+*_cache/
+/cache/
+*.utf8.md
+*.knit.md
+
+# Compiled source
+# --------------------------------------------------------------------------
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Temporary files
+# --------------------------------------------------------------------------
+*.swp
+*.swo
+*~
+
+# Packages
+# --------------------------------------------------------------------------
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs                                                                        
+# --------------------------------------------------------------------------
+*.log
+
+# OS generated files                                                          
+# --------------------------------------------------------------------------
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Python cache files                                                          
+# --------------------------------------------------------------------------
+__pycache__
+
+# Editor files                                                                
+# --------------------------------------------------------------------------
+.vscode
+
+# Config files - Often contain keys, passwords or other sensitive info
+# --------------------------------------------------------------------------
+*.ini
+*.env
+
+# .gitignore variations I saved for backups                                   
+# --------------------------------------------------------------------------
+.gitignore*

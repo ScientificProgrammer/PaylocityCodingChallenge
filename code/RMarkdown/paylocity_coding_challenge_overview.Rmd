@@ -75,7 +75,7 @@ data model containing the following four tables.
 
 1. Job
 
-![](```r here::here("./img/fig_pgAdmin_ERD_AS-IS.pgerd_800x800.png")```)
+![](./../../img/fig_pgAdmin_ERD_AS-IS.pgerd_800x800.png)
 
 
 ```{r TableSet1, eval = FALSE}
@@ -261,7 +261,7 @@ knitr::raw_html("\n</div>\n")
 
 ```
 :::{id="fig-container-erd-company-employee-position" style="margin: 2em auto 2em auto; padding: 2em; border: solid thin black; border-radius: 2em; box-shadow: 3px 3px 5px black;"}
-![**FIGURE 1:** Sample ERD for logical data model for a company/employee relational database](img/fig_company_db_schema_939x151.png "Entity Relationship Diagram for a Company/Employee Logical Data Model")
+![**FIGURE 1:** Sample ERD for logical data model for a company/employee relational database](./../../img/fig_company_db_schema_939x151.png "Entity Relationship Diagram for a Company/Employee Logical Data Model")
 :::
 
 

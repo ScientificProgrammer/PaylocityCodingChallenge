@@ -1,6 +1,6 @@
 <div style="font-size: 1em;">
 
-Last updated on 2021-12-28 23:23:13
+Last updated on 2021-12-28 23:38:36
 
 </div>
 
@@ -62,7 +62,7 @@ conceptual data model containing the following four tables.
 
 4.  Job
 
-![](%60%60D:/GoogleDrive/eric.milgram/Career/Job%20Prospects/2021-11-09%20Paylocity/020%20Paylocity%20Coding%20Challenge/Paylocity%20Coding%20Challenge/./img/fig_pgAdmin_ERD_AS-IS.pgerd_800x800.png%60%60)
+![](./../../img/fig_pgAdmin_ERD_AS-IS.pgerd_800x800.png)
 
 <div style="clear: both;">
 
@@ -191,7 +191,7 @@ style="margin: 2em auto 2em auto; padding: 2em; border: solid thin black; border
 
 ![**FIGURE 1:** Sample ERD for logical data model for a company/employee
 relational
-database](img/fig_company_db_schema_939x151.png "Entity Relationship Diagram for a Company/Employee Logical Data Model")
+database](./../../img/fig_company_db_schema_939x151.png "Entity Relationship Diagram for a Company/Employee Logical Data Model")
 
 </div>
 

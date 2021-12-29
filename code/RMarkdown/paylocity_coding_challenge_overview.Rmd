@@ -65,7 +65,7 @@ The expectation is that the candidate will complete the `Python` exercise ahead 
 ## MULTI-PART SQL EXERCISE: LIVE WALK-THROUGH
 
 The following figure shows an *entity relationship diagram* (ERD) for a conceptual
-data model containing 4 tables.
+data model containing the following four tables.
 
 1. Company
 
@@ -75,7 +75,7 @@ data model containing 4 tables.
 
 1. Job
 
-![](./img/Figure - PGAdmin Tool - ERD for DB.pgerd 800x800.png)
+![](```r here::here("./img/fig_pgAdmin_ERD_AS-IS.pgerd_800x800.png")```)
 
 
 ```{r TableSet1, eval = FALSE}

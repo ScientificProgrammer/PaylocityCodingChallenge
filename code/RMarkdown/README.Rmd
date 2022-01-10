@@ -129,7 +129,7 @@ Paylocity refers to these exercises as the *Paylocity Coding Challenge*.
     FOLLOWING ITEMS.
   </div>
   <ol>
-    <li>MY INTERPRETATION OF THE <a href='```r here::here("./code/Markdown/paylocity_coding_challenge_overview.md")```'>PAYLOCITY CODING CHALLENGE</a></li>
+    <li><a href='```r here::here("./code/Markdown/paylocity_coding_challenge_overview.md")```'>MY INTERPRETATION</a> OF THE PAYLOCITY CODING CHALLENGE</li>
     <li>
       <p>THE STRUCTURE OF THE REPO: 3 key top level sub-directories</p>
     <ol>

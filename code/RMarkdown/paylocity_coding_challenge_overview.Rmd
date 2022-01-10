@@ -280,13 +280,13 @@ For the data model illustrated in **Figure 1**, please complete the following ac
 
 ## Sample Input Database Payload File{id='sample_input_payload_data'}
 
-NOTE: Although the full contents of the sample payload file are shown below, you can also download the file directly from the [data subdirectory of this repo](./data/010_Paylocity_sample_payload_for_DB_loading.txt). Also, the [raw content](https://raw.githubusercontent.com/ScientificProgrammer/PaylocityCodingChallenge/master/data/010_Paylocity_sample_payload_for_DB_loading.txt) of the file can be downloaded directly using https.
+NOTE: Although the full contents of the sample payload file are shown below, you can also download the file directly from the [data subdirectory of this repo](./data/010_Paylocity_sample_payload_for_DB_loading.txt).
 
 ```{r ShowPayloadFile}
 library(readr)
 library(here)
 
-sampleText <- readr::read_lines(here::here("data/010_Paylocity_sample_payload_for_DB_loading.txt"))
+sampleText <- readr::read_lines(here::here("./data/010_Paylocity_sample_payload_for_DB_loading.txt"))
 knitr::asis_output(paste0("     ", sampleText, "\n"))
 ```
 

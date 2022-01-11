@@ -1,14 +1,3 @@
-<style type="text/css">
-pre code, pre, code {
-white-space: pre !important;
-overflow-x: scroll !important;
-word-break: keep-all !important;
-word-wrap: initial !important;
-}
-</style>
-
-------------------------------------------------------------------------
-
 <table id="DocHeader" style="margin: 5em 0 1em 0; solid thick black; box-shadow: 5px 5px 10px black; font-size: 1.25em; width: 100%;">
 <tbody>
 <tr>
@@ -49,7 +38,7 @@ December 15, 2021<sup>1</sup>
 
 <div style="font-size: 1em;">
 
-<sup>1</sup>Last updated on 2022-01-11 05:07:58
+<sup>1</sup>Last updated on 2022-01-11 05:12:51
 
 </div>
 

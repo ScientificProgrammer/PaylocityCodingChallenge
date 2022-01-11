@@ -1,6 +1,74 @@
+<style type="text/css">
+
+pre code, pre, code {
+  white-space: pre !important;
+  overflow-x: scroll !important;
+  word-break: keep-all !important;
+  word-wrap: initial !important;
+}
+
+
+#DocHeader {
+margin: 5em 0 1em 0;
+solid thick black;
+box-shadow: 5px 5px 10px black;
+font-size: 1.25em;
+width: 100%;
+}
+
+#DocHeader > tbody > tr > td {
+padding: 0.5em;
+border: solid thin black;
+}
+
+#DocHeader > tbody > tr > td:first-child {
+font-weight: bold;
+text-transform: uppercase;
+font-size: 1.25em;
+max-width: 30%;
+}
+</style>
+<table id="DocHeader">
+<tbody>
+<tr>
+<td>
+Title
+</td>
+<td>
+Paylocity Coding Challenge: Challenge Overview
+</td>
+</tr>
+<tr>
+<td>
+Author
+</td>
+<td>
+Eric Milgram, PhD
+</td>
+</tr>
+<tr>
+<td>
+Github Permalink
+</td>
+<td>
+<a href="https://github.com/ScientificProgrammer/PaylocityCodingChallenge">
+ScientificProgrammer/PaylocityCodingChallenge </a>
+</td>
+</tr>
+<tr>
+<td>
+Document Creation Date
+</td>
+<td>
+December 15, 2021<sup>1</sup>
+</td>
+</tr>
+</tbody>
+</table>
+
 <div style="font-size: 1em;">
 
-Last updated on 2022-01-10 14:04:47
+<sup>1</sup>Last updated on 2022-01-11 02:42:19
 
 </div>
 
@@ -62,7 +130,7 @@ conceptual data model containing the following four tables.
 
 4.  Job
 
-![](./../../img/fig_pgAdmin_ERD_AS-IS.pgerd_800x800.png)
+<img src="./../../img/fig_pgAdmin_ERD_AS-IS.pgerd_800x800.png" style="box-shadow: 5px 5px 10px black; border-radius: 15%; margin-bottom: 2em;" />
 
 <div style="clear: both;">
 
@@ -215,9 +283,25 @@ following actions.
 ## 3.1 Sample Input Database Payload File
 
 NOTE: Although the full contents of the sample payload file are shown
-below, you can also download the file directly from the [data
-subdirectory of this
-repo](./data/010_Paylocity_sample_payload_for_DB_loading.txt).
+below, you can also download the file from the [data
+subdirectory](./data/010_Paylocity_sample_payload_for_DB_loading.txt) of
+this repo.
+
+Alternatively, you can also download this file directly using `curl` or
+`wget` via the [raw
+link](https://raw.githubusercontent.com/ScientificProgrammer/PaylocityCodingChallenge/master/data/010_Paylocity_sample_payload_for_DB_loading.txt).
+See the code in the next section for an example.
+
+### 3.1.1 Bash Shell Code to Download the Payload Data File
+
+    BASE_URL="raw.githubusercontent.com/ScientificProgrammer/PaylocityCodingChallenge"
+    FILE_NAME="010_Paylocity_sample_payload_for_DB_loading.txt"
+
+    curl -i -SL "https://${BASE_URL}/master/data/${FILE_NAME}" -o ${FILE_NAME}
+
+------------------------------------------------------------------------
+
+### 3.1.2 Full Data Set
 
      { "source_table": "Company",  "action": "INSERT", "timestamp": "100.0",  "guid": "1c898066-858e-406c-a15d-36146c9642de", "name": "Paylocity",  "status": "1" }
      { "source_table": "Company",  "action": "INSERT", "timestamp": "200.0",  "guid": "0090d7b0-b07a-47cd-b295-ff798a6c0613", "name": "Taco Shack", "status": "1" }

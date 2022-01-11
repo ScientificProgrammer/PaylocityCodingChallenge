@@ -22,15 +22,15 @@ library(here)
 knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = FALSE)
 ```
 
+
 <style type="text/css">
 
 pre code, pre, code {
-  white-space: pre !important;
-  overflow-x: scroll !important;
-  word-break: keep-all !important;
-  word-wrap: initial !important;
+white-space: pre !important;
+overflow-x: scroll !important;
+word-break: keep-all !important;
+word-wrap: initial !important;
 }
-
 
 #DocHeader {
 margin: 5em 0 1em 0;

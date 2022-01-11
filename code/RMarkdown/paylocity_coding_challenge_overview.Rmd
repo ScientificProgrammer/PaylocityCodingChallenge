@@ -23,6 +23,7 @@ knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = 
 ```
 
 
+```{css, echo = FALSE}
 <style type="text/css">
 
 pre code, pre, code {
@@ -53,30 +54,36 @@ max-width: 30%;
 }
 </style>
 
+```
+
+```{html, echo = FALSE}
 <table id="DocHeader">
-<tbody>
-<tr>
-<td>Title</td>
-<td>Paylocity Coding Challenge: Challenge Overview</td>
-</tr>
-<tr>
-<td>Author</td>
-<td>Eric Milgram, PhD</td>
-</tr>
-<tr>
-<td>Github Permalink</td>
-<td>
-<a href="https://github.com/ScientificProgrammer/PaylocityCodingChallenge">
-ScientificProgrammer/PaylocityCodingChallenge
+  <tbody>
+  <tr>
+  <td>Title</td>
+  <td>Paylocity Coding Challenge: Challenge Overview</td>
+  </tr>
+  <tr>
+  <td>Author</td>
+  <td>Eric Milgram, PhD</td>
+  </tr>
+  <tr>
+  <td>Github Permalink</td>
+  <td>
+  <a href="https://github.com/ScientificProgrammer/PaylocityCodingChallenge">
+  ScientificProgrammer/PaylocityCodingChallenge
 </a>
-</td>
-</tr>
-<tr>
-<td>Document Creation Date</td>
-<td>December 15, 2021<sup>1</sup></td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr>
+  <td>Document Creation Date</td>
+  <td>December 15, 2021<sup>1</sup></td>
+  </tr>
+  </tbody>
+  </table>
+
+```
+
 
 ::: {style="font-size: 1em;"}
 <sup>1</sup>Last updated on `r Sys.time()`

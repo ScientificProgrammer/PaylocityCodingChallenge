@@ -1,64 +1,46 @@
 <style type="text/css">
-
 pre code, pre, code {
 white-space: pre !important;
 overflow-x: scroll !important;
 word-break: keep-all !important;
 word-wrap: initial !important;
 }
-
-#DocHeader {
-margin: 5em 0 1em 0;
-solid thick black;
-box-shadow: 5px 5px 10px black;
-font-size: 1.25em;
-width: 100%;
-}
-
-#DocHeader > tbody > tr > td {
-padding: 0.5em;
-border: solid thin black;
-}
-
-#DocHeader > tbody > tr > td:first-child {
-font-weight: bold;
-text-transform: uppercase;
-font-size: 1.25em;
-max-width: 30%;
-}
 </style>
-<table id="DocHeader">
+
+------------------------------------------------------------------------
+
+<table id="DocHeader" style="margin: 5em 0 1em 0; solid thick black; box-shadow: 5px 5px 10px black; font-size: 1.25em; width: 100%;">
 <tbody>
 <tr>
-<td>
+<td style="padding: 0.5em; border: solid thin black; font-weight: bold; text-transform: uppercase; font-size: 1.25em; max-width: 30%;">
 Title
 </td>
-<td>
+<td style="padding: 0.5em; border: solid thin black;">
 Paylocity Coding Challenge: Challenge Overview
 </td>
 </tr>
 <tr>
-<td>
+<td style="padding: 0.5em; border: solid thin black; font-weight: bold; text-transform: uppercase; font-size: 1.25em; max-width: 30%;">
 Author
 </td>
-<td>
+<td style="padding: 0.5em; border: solid thin black;">
 Eric Milgram, PhD
 </td>
 </tr>
 <tr>
-<td>
+<td style="padding: 0.5em; border: solid thin black; font-weight: bold; text-transform: uppercase; font-size: 1.25em; max-width: 30%;">
 Github Permalink
 </td>
-<td>
+<td style="padding: 0.5em; border: solid thin black;">
 <a href="https://github.com/ScientificProgrammer/PaylocityCodingChallenge">
 ScientificProgrammer/PaylocityCodingChallenge </a>
 </td>
 </tr>
 <tr>
-<td>
+<td style="padding: 0.5em; border: solid thin black; font-weight: bold; text-transform: uppercase; font-size: 1.25em; max-width: 30%;">
 Document Creation Date
 </td>
-<td>
+<td style="padding: 0.5em; border: solid thin black;">
 December 15, 2021<sup>1</sup>
 </td>
 </tr>
@@ -67,7 +49,7 @@ December 15, 2021<sup>1</sup>
 
 <div style="font-size: 1em;">
 
-<sup>1</sup>Last updated on 2022-01-11 04:59:27
+<sup>1</sup>Last updated on 2022-01-11 05:07:58
 
 </div>
 

@@ -10,10 +10,12 @@ knit: (function(inputFile, encoding) {
         }
       )
 output:
+  html_document: default
   md_document:
     toc: yes
     number_sections: yes
     variant: gfm
+  
 ---
 
 ```{r setup, include=FALSE}
@@ -22,7 +24,8 @@ library(here)
 knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = FALSE)
 ```
 
-<table id="DocHeader" style="margin: 5em 0 1em 0; solid thick black; box-shadow: 5px 5px 10px black; font-size: 1.25em; width: 100%;">
+```{html, results = "asis"}
+<table id="DocHeader" style="margin: 5em 0 1em 0; border: solid thick black; box-shadow: 5px 5px 10px black; font-size: 1.25em; width: 100%;">
 <tbody>
 <tr>
 <td style="padding: 0.5em; border: solid thin black; font-weight: bold; text-transform: uppercase; font-size: 1.25em; max-width: 30%;">Title</td>
@@ -47,6 +50,7 @@ ScientificProgrammer/PaylocityCodingChallenge
 </tbody>
 </table>
 
+```
 
 
 ::: {style="font-size: 1em;"}

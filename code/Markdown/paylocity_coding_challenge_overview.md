@@ -38,17 +38,17 @@ December 15, 2021<sup>1</sup>
 
 <div style="font-size: 1em;">
 
-<sup>1</sup>Last updated on 2022-01-11 05:12:51
+<sup>1</sup>Last updated on 2022-01-11 16:58:34
 
 </div>
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
-<!---
+<!--
 ::: {style="font-size: 1.25em; color: gray;"}
 This coding challenge will be part of the interview for Paylocity.
 :::
---->
+-->
 <blockquote style="font-size: 1.75em; background-color: lightgray; box-shadow: 5px 5px 10px black; margin: 2em auto 2em auto; padding: 1.5em; border-radius: 1em; text-align; center;">
 
 A written summary of the candidate’s work from these coding challenges
@@ -57,13 +57,11 @@ candidate’s interview.
 
 </blockquote>
 
-------------------------------------------------------------------------
+<!-- ********************** PART 1: CODING CHALLENGE OVERVIEW ********************** -->
 
-<!--- ********************** PART 1: CODING CHALLENGE OVERVIEW ********************** --->
+# 1 PAYLOCITY CODING CHALLENGE OVERVIEW
 
-# 1 1 PAYLOCITY CODING CHALLENGE OVERVIEW
-
-## 1.1 1.1 PYTHON EXERCISE
+## 1.1 PYTHON EXERCISE
 
 Each candidate is required to complete the following exercise and return
 it a minimum of 24 hours before their interview. They will be asked to
@@ -87,7 +85,7 @@ exercise ahead of time and walk through their answer during the
 **Technical Interview**. The candidate will be expected to present their
 code and show it running on their machine.
 
-## 1.2 1.2 MULTI-PART SQL EXERCISE: LIVE WALK-THROUGH
+## 1.2 MULTI-PART SQL EXERCISE: LIVE WALK-THROUGH
 
 The following figure shows an *entity relationship diagram* (ERD) for a
 conceptual data model containing the following four tables.
@@ -122,13 +120,11 @@ performed on the physical database schema.
 A `timestamp` will be inserted or updated with various records in each
 of the tables in our database.
 
-------------------------------------------------------------------------
+<!-- ********************** PART 2: CODING CHALLENGE DETAILS ********************** -->
 
-<!--- ********************** PART 2: CODING CHALLENGE DETAILS ********************** --->
+# 2 CODING CHALLENGE DETAILS
 
-# 2 2 CODING CHALLENGE DETAILS
-
-## 2.1 2.1 WRITE A PYTHON SCRIPT
+## 2.1 WRITE A PYTHON SCRIPT
 
 You’re tasked with writing a Python script, which must do the following
 items.
@@ -157,21 +153,21 @@ this repo, and it is also available in the Appendix (see
 [below](#31-sample-input-database-payload-file)). When processing this
 file, your code should print an output similar to what is shown here.
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
     Company
     ==========
     {'guid': '1c898066-858e-406c-a15d-36146c9642de', 'name': 'Paylocity', 'status': '2'}
     {'guid': '0090d7b0-b07a-47cd-b295-ff798a6c0613', 'name': 'Burrito Shack', 'status': '2'}
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
     Position
     ==========
     {'guid': '40a36493-f450-4331-874c-5ef01aabe1d5', 'name': 'Software Engineer', 'status': '1'}
     {'guid': 'f9b3ee71-7fb2-4dd5-9c13-b4c10d11fde7', 'name': 'Data Engineer',     'status': '1'}
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
     Employee
     ==========
@@ -180,7 +176,7 @@ file, your code should print an output similar to what is shown here.
     {'guid': 'd4926109-b6c9-4447-a53c-b787684e10f1', 'state': 'IL', 'status': '3'}
     {'guid': '259d5154-5f76-481b-b0f9-53e24c3b570e', 'state': 'NY', 'status': '1'}
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
     Job
     ==========
@@ -188,7 +184,7 @@ file, your code should print an output similar to what is shown here.
     {'guid': 'f73a2796-4579-4779-8345-f0dfcf7dd533', 'company_guid': '0090d7b0-b07a-47cd-b295-ff798a6c0613', 'employee_guid': '4e0c8c17-b031-4a72-b73d-f0a85570826d'}
     {'guid': '5ab54bb5-b72d-40f8-9a49-e0d2d004d7a9', 'company_guid': '0090d7b0-b07a-47cd-b295-ff798a6c0613', 'employee_guid': '259d5154-5f76-481b-b0f9-53e24c3b570e'}
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
 Your code will be evaluated on the following elements, which will also
 form the basis for our questions.
@@ -206,7 +202,7 @@ exercise!
 
 </blockquote>
 
-## 2.2 2.2 SQL EXERCISE
+## 2.2 SQL EXERCISE
 
 [Figure 1](#fig-container-erd-company-employee-position), which is shown
 below, illustrates an *entity relationship diagram* (ERD) for a logical
@@ -246,11 +242,11 @@ following actions.
     the process you would use to find the root causes of the query’s
     sluggishness?
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
-# 3 3 APPENDICES
+# 3 APPENDICES
 
-## 3.1 3.1 Sample Input Database Payload File
+## 3.1 Sample Input Database Payload File
 
 NOTE: Although the full contents of the sample payload file are shown
 below, you can also download the file from the [data
@@ -262,16 +258,16 @@ Alternatively, you can also download this file directly using `curl` or
 link](https://raw.githubusercontent.com/ScientificProgrammer/PaylocityCodingChallenge/master/data/010_Paylocity_sample_payload_for_DB_loading.txt).
 See the code in the next section for an example.
 
-### 3.1.1 3.1.1 Bash Shell Code to Download the Payload Data File
+### 3.1.1 Bash Shell Code to Download the Payload Data File
 
     BASE_URL="raw.githubusercontent.com/ScientificProgrammer/PaylocityCodingChallenge"
     FILE_NAME="010_Paylocity_sample_payload_for_DB_loading.txt"
 
     curl -i -SL "https://${BASE_URL}/master/data/${FILE_NAME}" -o ${FILE_NAME}
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
-### 3.1.2 3.1.2 Full Data Set
+### 3.1.2 Full Data Set
 
      { "source_table": "Company",  "action": "INSERT", "timestamp": "100.0",  "guid": "1c898066-858e-406c-a15d-36146c9642de", "name": "Paylocity",  "status": "1" }
      { "source_table": "Company",  "action": "INSERT", "timestamp": "200.0",  "guid": "0090d7b0-b07a-47cd-b295-ff798a6c0613", "name": "Taco Shack", "status": "1" }

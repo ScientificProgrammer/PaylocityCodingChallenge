@@ -97,6 +97,12 @@ __pycache__
 # --------------------------------------------------------------------------
 *.html
 
-# .gitignore variations I saved for backups                                   
+
+# Sublime Text Configuration Files
+# --------------------------------------------------------------------------
+*.sublime-workspace
+*.sublime-project
+
+# .gitignore variations I saved for backups
 # --------------------------------------------------------------------------
 .gitignore*

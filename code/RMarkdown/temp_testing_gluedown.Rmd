@@ -1,0 +1,47 @@
+---
+title: "Testing the `gluedown` package"
+author: "Eric Milgram, PhD"
+date: "1/12/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(gluedown)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I'm testing the `gluedown` package, which appears to be the perfect solution
+I've been been searching for to use `rmarkdown` to create *Github Flavored
+Markdown* (*GFM*)
+
+Start by reviewing the `gluedown` *package vignette* on creating *GFM*. If you
+have a version of `gluedown` with the *vignettes* installed, take the following
+actions to view it.
+
+1.  Execute `browseVignettes("gluedown")` in your `R` "console window".
+2.  In the row with the text, "*GitHub Flavored Markdown*", click the hyperlink
+    named`HTML`.
+3.  The code block below was copied from that document.
+
+```{r}
+rescale01 <- function(x) {
+  rng <- range(x, na.rm = TRUE)
+  (x - rng[1]) / (rng[2] - rng[1])
+}
+
+# use deparse() to turn unevaluated expressions into character strings.
+source <- deparse(rescale01)
+# this new object is a regular character vector
+print(source)
+```
+
+```{r}
+md_indent(source)
+```
+
+```{r echo=FALSE, results='asis'}
+md_indent(source)
+```
+
+

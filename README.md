@@ -29,11 +29,13 @@
 <!--         Date of Last Update: -->
 <!--       </td> -->
 <!--       <td> -->
-<!--         ``2022-01-12 05:18:06`` -->
+<!--         ``2022-01-13 16:13:18`` -->
 <!--       </td> -->
 <!--     </tr> -->
 <!--   </tbody> -->
 <!-- </table> -->
+
+<div class="flex-container">
 
 <div id="titleBox">
 
@@ -95,7 +97,9 @@ Date of Last Update:
 
 <div class="titleBoxItemValue">
 
-`2022-01-12 05:18:06`
+`2022-01-13 16:13:18`
+
+</div>
 
 </div>
 

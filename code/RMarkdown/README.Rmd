@@ -18,6 +18,7 @@ output:
 
 ```{r setup, include=FALSE}
 library(here)
+library(gluedown)
 
 knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = FALSE)
 ```
@@ -92,7 +93,7 @@ knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = 
 <!--   </tbody> -->
 <!-- </table> -->
 
-
+<div class="flex-container">
 <div id="titleBox">
 <div class="titleBoxRow">
 <div class="titleBoxItemDescriptor">Github Repo Name:</div>
@@ -109,6 +110,7 @@ knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = 
 <div class="titleBoxRow">
 <div class="titleBoxItemDescriptor">Date of Last Update:</div>
 <div class="titleBoxItemValue">```r Sys.time()```</div>
+</div>
 </div>
 </div>
 

@@ -13,11 +13,17 @@ import sys
 import os
 import errno
 from configparser import ConfigParser
-from pathlib import PurePath
 
 
 class CustomError(Exception):
     """Base class for exceptions defined in this module."""
+
+
+class InvalidNumArgsError(CustomError):
+    """
+    Thrown when this module is called directly with an invalid number
+    of command line arguments.
+    """
 
 
 class ConfigFileNotFoundError(CustomError):
@@ -37,17 +43,19 @@ class ConfigFileNotFoundError(CustomError):
         self.errmsg = os.strerror(errno.ENOENT)
         self.config_filename = config_filename
         self.message = f"""
+
 **********************************************************
   ERROR ATTEMPTING TO READ DATABASE CONFIGURATION FILE
 **********************************************************
-    ERROR CODE: {self.errcode}
-    ERROR MSG:  {self.errmsg}
-    FILENAME:   {self.config_filename}
+    ERROR CODE: '{self.errcode}'
+    ERROR MSG:  '{self.errmsg}'
+    FILENAME:   '{self.config_filename}'
 
-         The specified database configuration file could
-         not be located. Please ensure that the file
-         exists and you have read permissions for it.
+ The specified database configuration file could not be
+ located. Please ensure that the file exists and you
+ have read permissions for it.
 ***********************************************************
+
         """
         super().__init__(self.message)
 
@@ -70,10 +78,11 @@ class InvalidConfigSectionError(CustomError):
         self.config_filename = config_filename
         self.section_name = section_name
         self.message = f"""
+
 ***************************************************************
    ERROR ATTEMPTING TO PARSE DATABASE CONFIGURATION FILE
 ***************************************************************
-     FILENAME: '{config_filename}'
+     FILENAME:     '{config_filename}'
      FILE SECTION: '{section_name}'
 
            The database configuration file was located.
@@ -87,55 +96,56 @@ class InvalidConfigSectionError(CustomError):
            configuration section exists and contains valid
            values. For more information, review the help
            information located in
-             help(pcc_config_parser.config)
+             >> help(pcc_030_010_config_parser.config)
            or review the documentation for the standard
-           Python'configparser' module
+           Python 'configparser' module
 **************************************************************
+
         """
         super().__init__(self.message)
 
 
-def config(filename="database.ini", section="postgresql"):
+def ParseDBConfigFile(filename="database.ini", section="postgresql"):
     """
     PURPOSE:
         Read a configuration file and parse the information
         needed to connect to a PostgreSQL database server.
 
     PARAMETERS:
-        filename:
-            (string - optional)
-                        Name of the file that contains the DB credentials
-                        and connection information.
+        1) filename:
+            * optional
+            * Name of the file that contains the DB credentials
+              and connection information.
 
-        section:
-          (string - optional)
-                        Name of the file section that contains the
-                        credential and connection information.
+        2) section:
+            * optional
+            * Name of the file section that contains the
+              credential and connection information.
+
     RETURNS:
         A Python dictionary containing the information needed
-        by the 'psycopg2' module to make a connection to
-        a PostgreSQL database.
+        by the 'psycopg2' module to make a connection to a PostgreSQL database.
 
     OVERVIEW:
       This function performs the following sequence of events.
-      1) Check to see if 'filename' exists.
+          1. Check to see if 'filename' exists.
 
-      2) Allocate a new configparser.ConfigParser() object.
+          2. Allocate a new configparser.ConfigParser() object.
 
-      3) Read 'filename' and extract the DB configuration information
-         from 'section'. A sample file configuration is shown here.
+          3. Read 'filename' and extract the DB configuration information
+             from 'section'. A sample file configuration is shown here.
 
-            [postgresql]
-            host=paylocity-db-name.awsservername.us-east-1.rds.amazonaws.com
-            port=5432
-            database=suppliers
-            user=postgres
-            password=ASUPERSECRETHARDTOGUESSPASSWORD
+                [postgresql]
+                host=paylocity-db-name.awsservername.us-east-1.rds.amazonaws.com
+                port=5432
+                database=suppliers
+                user=postgres
+                password=ASUPERSECRETHARDTOGUESSPASSWORD
 
-          NOTES:
-              a) If file section information does not contain an
-                 entry for 'port', a default value of 5432 will be
-                 used to attempt connecting to the database.
+            NOTES:
+              a) If file section information does not contain an entry for
+                 'port', a default value of 5432 will be used to attempt
+                  connecting to the database.
 
               b) The password can contain non-alpha characters such as !@#$%^&.
                  However, if the password does contain '%' characters, each one
@@ -151,8 +161,9 @@ def config(filename="database.ini", section="postgresql"):
                  formatting characters and either throw an error trying to
                  interpret the sequence or indicate that the DB
                  credentials/connection information is invalid.
-        4) Store the parsed information in a Python dictionary object and
-           return the object to the function caller.
+
+            4. Store the parsed information in a Python dictionary object and
+               return the object to the function caller.
 
     """
     if not os.path.exists(filename):
@@ -183,29 +194,34 @@ def config(filename="database.ini", section="postgresql"):
 
 def main():
     NUM_ARGS = len(sys.argv) - 1
-    MODULE_NAME = PurePath(sys.argv[0]).stem
+    MODULE_NAME = os.path.basename(sys.argv[0])
 
     if NUM_ARGS == 0:
-        # print("No command line arguments")
-        config()
+        ParseDBConfigFile()
 
     elif NUM_ARGS == 1:
-        # print(f"The ini file path is..................'{sys.argv[1]}'")
-        config(sys.argv[1])
+        ParseDBConfigFile(sys.argv[1])
 
     elif NUM_ARGS == 2:
-        # print(f"The ini file path is..................'{sys.argv[1]}'")
-        # print(f"Section of ini file to process........{sys.argv[2]}")
-        config(sys.argv[1], sys.argv[2])
+        ParseDBConfigFile(sys.argv[1], sys.argv[2])
 
     else:
         raise Exception(
             f"""
-            ERROR: Invalid number of command line args.
-                   Module was called with {NUM_ARGS} args,
-                   but the valid number of args is 0, 1, or 2.
-                   See help({MODULE_NAME}) for more details.
-            """
+
+**********************************************************
+ERROR: Invalid number of command line args.
+**********************************************************
+    Module was called with '{NUM_ARGS}' args,
+    but the valid number of arguments is
+    0, 1, or 2.
+
+    See
+        >> help({MODULE_NAME})
+    for more details.
+**********************************************************
+
+"""
         )
 
 

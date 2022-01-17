@@ -1,0 +1,77 @@
+{
+    "PROJECT_OVERVIEW":
+    {
+        "PROJECT_NAME": "Paylocity Coding Challenge",
+        "PROJECT_GITHUB_URL": "https://github.com/ScientificProgrammer/PaylocityCodingChallenge",
+        "CANDIDATE_INFO":
+        {
+            "NAME": "Eric Milgram, PhD",
+            "RECRUITER": "Aaron Rontal",
+            "AGENCY": "Matrixes.com"
+        }
+    },
+    "PROJECT_FILES":
+    {
+        "DIRECTORY_STRUCTURE":
+        {
+            "NOTES": "All paths are relative to the 'HOME' directory for the project files",
+            "SUBDIRECTORIES":
+            {
+                "code":
+                {
+                    "SUBDIRECTORIES":
+                    {
+                        "Markdown":
+                        {},
+                        "Python":
+                        {},
+                        "R":
+                        {},
+                        "RMarkdown":
+                        {},
+                        "SQL":
+                        {}
+                    }
+                }
+            }
+
+        },
+        "PG_DB_CONFIG_FILE":
+        {
+            "DIRECTORY_PATH": ".",
+            "FILENAME": "pcc_000_010_aws_pg_dev02.ini",
+            "PURPOSE": "Contains the information needed to connect to a valid PostgreSQL instance, including HOSTNAME, PORT, USERNAME, and PASSWORD",
+            "REFERENCED_BY": ["pcc_000_validation_tests.py", "pcc_030_010_config_parser.py"],
+            "NOTES": "When calling pcc_030_010_config_parser.config()"
+        },
+        "PCC_DB_PAYLOAD_FILE":
+        {
+            "DIRECTORY_PATH": "../../data",
+            "FILENAME": "010_paylocity_sample_payload_for_db_loading.txt",
+            "PURPOSE:": "Contains the sample payload data to be used for testing the Python code."
+        },
+        "PCC_PYTHON_MODULES":
+        {
+            "pcc_000_validation_tests.py":
+            {
+                "PURPOSE": "Validate that all required config files, Python modules, SQL files, and data files are present and intact.",
+                "MD5SUM": "218466313a209986e6022b0dd40843fb"
+            },
+            "pcc_030_010_config_parser.py":
+            {
+                "PURPOSE": "Parse the 'PG_DB_CONFIG_FILE'.",
+                "MD5SUM": "ce1aa84f43bbad14bb958d86e9ad794e"
+            },
+            "pcc_payload_parser.py":
+            {
+                "PURPOSE": "Parse the 'PCC_DB_PAYLOAD_FILE'",
+                "MD5SUM": "c3ae53b3521e1c55fb0570d9721d5ea8"
+            },
+            "pcc_test_db_connection.py":
+            {
+                "PURPOSE": "Connect to the Postgres DB instance using the information contained in the 'PG_DB_CONFIG_FILE'",
+                "MD5SUM": "aac86dc9f473a2ab89eaa799bdbdc1cd"
+            }
+        }
+    }
+}

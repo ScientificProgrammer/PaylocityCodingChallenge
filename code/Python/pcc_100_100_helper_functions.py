@@ -5,9 +5,68 @@ import re
 import sys
 
 
-__all__ = ["ExtractModuleNameFromFileName", "normalize_path"]
+__all__ = ["ExtractModuleNameFromFileName", "normalize_path", "BannerPrint"]
 
 _FILE_EXTENSION = "py"
+
+
+# def BannerPrint(
+#     MarquisStr: str,
+#     BannerChar: str = "*",
+#     BannerWidth: int = "80",
+#     *,
+#     PrintTopBorder: bool = True,
+#     LinesAboveTopBorder: int = 1,
+#     LinesBelowTopBorder: int = 0,
+#     LinesAboveMarquisStr: int = 1,
+#     LinesBelowMarquisStr: int = 1,
+#     PrintBottomBorder: bool = True,
+#     LinesAboveBottomBorder: int = 0,
+#     LinesBelowBottomBorder: int = 1,
+# ) -> str:
+#     """
+#         Print a banner to make a text string standout.
+
+#                                     LinesAboveTopBorder    == 1
+#     ******************************  PrintTopBorder         == True
+#            My Sample Text           MarquisStr             == "My Sample Text"
+#     ******************************  PrintBottomBorder      == True
+#                                     LinesBelowBottomBorder == 1
+#     """
+#     if PrintTopBorder:
+#         if int(LinesAboveTopBorder) > 0:
+#             print("\n" * int(LinesAboveTopBorder - 1))
+#         if int(LinesBelowTopBorder) > 0:
+#             print("\n" * int(LinesBelowTopBorder - 1))
+#     if int(LinesAboveMarquisStr) > 0:
+#         print("\n" * int(LinesAboveMarquisStr - 1))
+#     if int(BannerWidth - len(MarquisStr)) > 2:
+#         print(MarquisStr.center(BannerWidth - 2, " "))
+#     else:
+#         print(MarquisStr)
+#     if int(LinesBelowMarquisStr) > 0:
+#         print("\n" * int(LinesBelowMarquisStr - 1))
+#     if PrintBottomBorder:
+#         if int(LinesAboveBottomBorder) > 0:
+#             print("\n" * int(LinesAboveBottomBorder - 1))
+#         if int(LinesBelowBottomBorder) > 0:
+#             print("\n" * int(LinesBelowBottomBorder - 1))
+
+
+def BannerPrint(
+    MarquisStr: str, BannerChar: str = "*", BannerWidth: int = 80
+) -> str:  # noqa: E501
+    """
+    Print a banner to make a text string standout.
+    """
+
+    print("")
+    print("".ljust(BannerWidth, "*"))
+    if int(BannerWidth - len(MarquisStr)) > 2:
+        print(MarquisStr.center(BannerWidth - 2, " "))
+    else:
+        print(MarquisStr)
+    print("")
 
 
 def normalize_path(path: str) -> str:

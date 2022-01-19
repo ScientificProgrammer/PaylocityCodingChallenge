@@ -69,7 +69,7 @@ def _main():
     """Performs the overall workflow of the Paylocity Coding Challenge"""
     # STEP 1: Print Module Name to the console
     MODULE_NAME = hf.ExtractModuleNameFromFileName(sys.argv[0])
-    hf.BannerPrint(f"Module '{MODULE_NAME}' was imported successfully.\n")
+    hf.BannerPrint(f"Module '{MODULE_NAME}' was imported successfully.")
 
     # STEP 2: Parse the local payload file and save the results.
     # rslt = ParseLocalPayloadFile()
@@ -79,7 +79,6 @@ def _main():
     DSN = connparser.ParseDBConfigFile(
         DB_DSN_FILENAME, DB_DSN_FILE_SECTION_NAME
     )  # noqa: E501
-    hf.BannerPrint(DSN)
     DBConn = None
     SQLStatement = (
         "select table_schema, table_name, table_type\n"

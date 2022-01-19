@@ -10,7 +10,6 @@ knit: (function(inputFile, encoding) {
         }
       )
 output:
-  html_document: default
   md_document:
     toc: yes
     number_sections: yes
@@ -24,7 +23,17 @@ library(gluedown)
 knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = FALSE)
 ```
 
-```{css}
+```{css, echo = FALSE}
+
+pre {
+  max-height: 800px !important;
+  overflow-y: auto !important;
+  overflow-x: scroll !important;
+}
+
+pre code {
+  white-space: pre
+}
 
 #titleBox {
   border: solid medium black;
@@ -53,19 +62,6 @@ knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = 
 
 .sourceCodeText {
   font-family: courier, monospace, serif;
-}
-
-```
-
-```{css, echo = FALSE}
-
-pre {
-  max-height: 800px !important;
-  overflow-y: auto !important;
-  overflow-x: scroll !important;
-}
-pre code {
-  white-space: pre
 }
 
 ```

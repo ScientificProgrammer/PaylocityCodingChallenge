@@ -1,4 +1,4 @@
-# 1 Paylocity Coding Challenge: Problem 1 of 2
+# Paylocity Coding Challenge: Problem 1 of 2
 
 <div style="font-size: 1.5em; padding-bottom: 0;">
 
@@ -20,15 +20,15 @@ Created: December 15, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 05:22:52</span>
+Last Updated: 2022-01-19 08:04:56</span>
 </td>
 </tr>
 </tbody>
 </table>
 
-## 1.1 Write a Python script to `INSERT`, `UPDATE`, or `DELETE` records in a PostgreSQL database.
+## Write a Python script to `INSERT`, `UPDATE`, or `DELETE` records in a PostgreSQL database.
 
-### 1.1.1 You’re tasked with writing a Python script, which must do the following items.
+### You’re tasked with writing a Python script, which must do the following items.
 
 1.  Read in a file that contains multiple lines.
 
@@ -107,9 +107,9 @@ exercise!
 
 ------------------------------------------------------------------------
 
-# 2 APPENDICES
+# APPENDICES
 
-## 2.1 Sample Input Database Payload File
+## Sample Input Database Payload File
 
 NOTE: Although the full contents of the sample payload file are shown
 below, you can also download the file from the [data
@@ -121,7 +121,7 @@ Alternatively, you can also download this file directly using `curl` or
 link](https://raw.githubusercontent.com/ScientificProgrammer/PaylocityCodingChallenge/master/data/010_Paylocity_sample_payload_for_DB_loading.txt).
 See the code in the next section for an example.
 
-### 2.1.1 Bash Shell Code to Download the Payload Data File
+### Bash Shell Code to Download the Payload Data File
 
     BASE_URL="raw.githubusercontent.com/ScientificProgrammer/PaylocityCodingChallenge"
     FILE_NAME="010_Paylocity_sample_payload_for_DB_loading.txt"
@@ -130,7 +130,7 @@ See the code in the next section for an example.
 
 ------------------------------------------------------------------------
 
-### 2.1.2 Full Data Set
+### Full Data Set
 
     { "source_table": "Company",  "action": "INSERT", "timestamp": "100.0",  "guid": "1c898066-858e-406c-a15d-36146c9642de", "name": "Paylocity",  "status": "1" }
     { "source_table": "Company",  "action": "INSERT", "timestamp": "200.0",  "guid": "0090d7b0-b07a-47cd-b295-ff798a6c0613", "name": "Taco Shack", "status": "1" }

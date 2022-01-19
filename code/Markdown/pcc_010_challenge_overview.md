@@ -20,7 +20,7 @@ Created: December 15, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 05:53:43</span>
+Last Updated: 2022-01-19 06:04:01</span>
 </td>
 </tr>
 </tbody>
@@ -56,6 +56,16 @@ must be submitted to Paylocity at least 24 hours prior to the
 candidate's interview.
 </blockquote>
 
+------------------------------------------------------------------------
+
+## Where can I find the detailed instructions for problems 1 & 2?
+
+1.  Problem 1: \<./pcc_020-010_problem1_write_python_program.md>
+
+2.  Problem 2: \<./pcc_020-020_problem2_sql_live_walkthrough.md>
+
+------------------------------------------------------------------------
+
 ## Problem 1 of 2: Writing a *Python* program to manage records in a *PostgreSQL* database
 
 Each candidate is required to complete the following exercise and return
@@ -79,6 +89,8 @@ The expectation is that the candidate will complete the `Python`
 exercise ahead of time and walk through their answer during the
 **Technical Interview**. The candidate will be expected to present their
 code and show it running on their machine.
+
+------------------------------------------------------------------------
 
 ## Problem 2 of 2: Multi-part SQL Exercise: Live walk-through
 

@@ -111,8 +111,8 @@ FOLLOWING ITEMS.
   <div>MY INTERPRETATION OF THE PAYLOCITY CODING CHALLENGE</div>
   <ul>
     <li><a href="code/Markdown/pcc_010_challenge_overview.md">The broad overview</a></li>
-    <li>Detailed instructions for <a href="code/Markdown/pcc_020-010_problem1_write_python_program.md"></a>Problem 1: Writing a Python program.</li>
-    <li>Detailed instructions for <a href="code/Markdown/pcc_020-020_problem2_sql_live_walkthrough.md"></a>Problem 2: Live SQL Walk-through Exercise.</li>
+    <li>Detailed instructions for <a href="code/Markdown/pcc_020-010_problem1_write_python_program.md">Problem 1: Writing a Python program.</a></li>
+    <li>Detailed instructions for <a href="code/Markdown/pcc_020-020_problem2_sql_live_walkthrough.md">Problem 2: Live SQL Walk-through Exercise.</a></li>
   </ul>
 </li>
 <li>

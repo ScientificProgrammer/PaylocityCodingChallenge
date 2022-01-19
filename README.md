@@ -20,7 +20,7 @@ Created: December 15, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 05:41:58</span>
+Last Updated: 2022-01-19 05:46:02</span>
 </td>
 </tr>
 </tbody>
@@ -64,13 +64,13 @@ overview</a>
 </li>
 <li>
 Detailed instructions for
-<a href="code/Markdown/pcc_020-010_problem1_write_python_program.md"></a>Problem
-1: Writing a Python program.
+<a href="code/Markdown/pcc_020-010_problem1_write_python_program.md">Problem
+1: Writing a Python program.</a>
 </li>
 <li>
 Detailed instructions for
-<a href="code/Markdown/pcc_020-020_problem2_sql_live_walkthrough.md"></a>Problem
-2: Live SQL Walk-through Exercise.
+<a href="code/Markdown/pcc_020-020_problem2_sql_live_walkthrough.md">Problem
+2: Live SQL Walk-through Exercise.</a>
 </li>
 </ul>
 </li>

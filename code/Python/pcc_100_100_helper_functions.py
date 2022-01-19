@@ -62,10 +62,11 @@ def BannerPrint(
 
     print("")
     print("".ljust(BannerWidth, "*"))
-    if int(BannerWidth - len(MarquisStr)) > 2:
-        print(MarquisStr.center(BannerWidth - 2, " "))
+    if int(BannerWidth) - len(MarquisStr) > 2:
+        print(f" {MarquisStr} ".center(int(BannerWidth) - 2, " "))
     else:
         print(MarquisStr)
+    print("".ljust(BannerWidth, "*"))
     print("")
 
 

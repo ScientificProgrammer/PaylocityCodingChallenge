@@ -1,0 +1,161 @@
+---
+title: "Paylocity Coding Challenge - System Configuration Details"
+author: "Eric Milgram, PhD"
+date: "1/18/2022"
+knit: (function(inputFile, encoding) {
+        rmarkdown::render(
+              input = inputFile,
+              encoding = encoding,
+              output_dir = here::here("code/Markdown"))
+        }
+      )
+output:
+  md_document:
+    toc: yes
+    number_sections: yes
+    variant: gfm
+---
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, include = TRUE, results = "hold", message = FALSE)
+```
+
+```{r, InitializeR}
+# Load key libraries
+
+library(here)
+library(tibble)
+library(kableExtra)
+```
+
+```{css, echo = FALSE}
+
+pre {
+  max-height: 800px !important;
+  overflow-y: auto !important;
+  overflow-x: scroll !important;
+}
+pre code {
+  white-space: pre
+}
+
+```
+
+# Paylocity Coding Challenge - System Configuration Details
+
+<div style="font-size: 1.5em; padding-bottom: 0;">Eric Milgram, PhD</div>
+<table>
+<tbody>
+<tr>
+  <td style="padding: 0; display: none;">
+    <a href="https://github.com/ScientificProgrammer/PaylocityCodingChallenge">ScientificProgrammer/PaylocityCodingChallenge</a>
+  </td>
+</tr>
+<tr>
+  <td style="padding: 0;">
+    Created: December 23, 2021
+  </td>
+</tr>
+<tr>
+  <td style="padding: 0;">
+    Last Updated: `r Sys.time()`</span>
+  </td>
+</tr>
+</tbody>
+</table>
+
+## Overview
+
+This page contains a summary of the key software components, frameworks, and
+operating systems that were used to complete the Paylocity Coding Challenge.
+
+## OS PARAMS
+
+```{r, OSParams}
+osparams <- tibble(
+    params = c(
+        "OS Name",
+        "Version",
+        "System Type",
+        "Processor",
+        "BIOS Version/Date",
+        "Locale",
+        "Installed Physical Memory (RAM)",
+        "Total Physical Memory"
+    ),
+    values = c(
+        "Microsoft Windows 11 Home",
+        "10.0.22000 Build 22000",
+        "x64-based PC",
+        "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz, 2801 Mhz, 4 Core(s), 8 Logical Processor(s)",
+        "LENOVO 4KCN45WW, 1/11/2019",
+        "United States",
+        "16.0 GB",
+        "15.9 GB"
+    )
+)
+
+kblTb1 <- osparams |>
+  kableExtra::kbl(col.names = c("PARAMETER", "VALUE")) |>
+  kableExtra::kable_styling(bootstrap_options = c("striped", "condensed", "bordered"))
+
+knitr::raw_html(kblTb1)
+  
+```
+
+## Editors/IDEs
+
+1. `vim` on *Debian* running under Windows Subsystem for Linux (WSL)  
+&nbsp;  
+<pre>
+eric@Y520-ERIC:~$ cat /etc/os-release
+PRETTY_NAME="Debian GNU/Linux 10 (buster)"
+NAME="Debian GNU/Linux"
+VERSION_ID="10"
+VERSION="10 (buster)"
+VERSION_CODENAME=buster
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+</pre>
+&nbsp;
+1. `Sublime Text 4` on `Windows - Build 4126` with the following installed plug-ins  
+
+   1. `LSP` &amp; `LSP-pylsp` configured for `flake8 4.0.1` (`CPython 3.10.1` on `Windows`)  
+
+   1. Lint Checks  
+
+      1. `pycodestyle 2.8.0`
+
+      1. `pyflakes 2.4.0`
+
+      1. `mccabe: 0.6.1` (*McCabe complexity checking*)
+
+   1. Auto-formatting provided by `Python Black`
+
+## Database Administration Tool - pgAdmin 4 (Microsoft Windows x64)
+
+![**FIGURE**: pgAdmin 4 GUI for MS Windows](`r here::here("img/fig_pgAdmin4_gui_for_Win11_x64.png")`)
+
+
+### pgAdmin4 Specifications
+
+The following table contains a summary of the pgAdmin4 specification values for
+the instance that I used to complete this coding challenge.
+
+| Parameter        | Value                                                 |
+|:-----------------|:------------------------------------------------------|
+| Version          | 6.3                                                   |
+| Application Mode | Desktop                                               |
+| Current User     | pgadmin4@pgadmin.org                                  |
+| NW.js Version    | 0.59.0                                                |
+| Browser          | Chromium 96.0.4664.55                                 |
+| Operating System | Windows-10-10.0.22000-SP0                             |
+| Release Date     | Dec 16, 2021                                          |
+| Download Link    | <https://www.pgadmin.org/download/pgadmin-4-windows/> |
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;

@@ -8,7 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 library(gluedown)
 
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, include = TRUE)
 ```
 
 I'm testing the `gluedown` package, which appears to be the perfect solution
@@ -44,4 +44,71 @@ md_indent(source)
 md_indent(source)
 ```
 
+Here is another example taken from a later portion of the same vignette.
 
+`CODE -> START HERE`
+
+---
+```{code}
+        You can also use `gluedown` to format R [inline code results][inline]. First,
+        use R to calculate a result.
+
+        ```{r ex_inline}
+        rand <- sample(state.name, 1)
+        # `r md_bold(rand)`
+        var <- sample(colnames(state.x77), 1)
+        # `r md_code(var)`
+        ```
+
+        Then, you can easily print that result in the middle of regular text with
+        markdown formatting. In this case, our randomly selected state is... 
+        `r md_bold(rand)` and the `r md_code(var)` variable was randomly selected from
+        the `state.x77` dataframe. Calculating results and using those
+        calculations in the body of a text document increases reproducibility. 
+
+        In a [meta-study of psychology journals][pmc], researchers found that "around
+        15% of the articles contained at least one statistical conclusion that proved,
+        upon recalculation, to be incorrect." These errors can be mitigated by using
+        inline printing of results like we did above. With the `gluedown` package,
+        programmers can **emphasize** those results without worry.
+
+        [pmc]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3174372/
+```
+
+---
+
+`CODE -> END HERE`
+
+---
+
+`OUTPUT --> START HERE`
+
+---
+
+You can also use `gluedown` to format R [inline code results][inline]. First,
+use R to calculate a result.
+
+```{r ex_inline}
+rand <- sample(state.name, 1)
+# `r md_bold(rand)`
+var <- sample(colnames(state.x77), 1)
+# `r md_code(var)`
+```
+
+Then, you can easily print that result in the middle of regular text with
+markdown formatting. In this case, our randomly selected state is... 
+`r md_bold(rand)` and the `r md_code(var)` variable was randomly selected from
+the `state.x77` dataframe. Calculating results and using those
+calculations in the body of a text document increases reproducibility. 
+
+In a [meta-study of psychology journals][pmc], researchers found that "around
+15% of the articles contained at least one statistical conclusion that proved,
+upon recalculation, to be incorrect." These errors can be mitigated by using
+inline printing of results like we did above. With the `gluedown` package,
+programmers can **emphasize** those results without worry.
+
+[pmc]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3174372/
+
+---
+
+`OUTPUT --> END HERE`

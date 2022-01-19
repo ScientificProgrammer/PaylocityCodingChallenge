@@ -20,7 +20,7 @@ Created: December 15, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 05:53:17</span>
+Last Updated: 2022-01-19 06:12:21</span>
 </td>
 </tr>
 </tbody>
@@ -138,7 +138,9 @@ CONCISE EXPLANATION OF MY CODING STRATEGY
 </li>
 <li>
 <p>
-HIGH LEVEL SUMMARY OF MY INFRASTRUCTURE:
+HIGH LEVEL SUMMARY OF MY INFRASTRUCTURE: See my
+<a href="code/Markdown/pcc_100_system_description.md">Infrastructure
+Summary Page</a>
 </p>
 <ul>
 <li>

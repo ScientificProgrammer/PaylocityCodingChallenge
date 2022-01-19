@@ -139,7 +139,7 @@ FOLLOWING ITEMS.
     <li><p>CONCISE EXPLANATION OF THE PROBLEM WITH A LINK TO MY INTERPRETATION OF THE <a href='`r here::here("code/Markdown/pcc_010_challenge_overview.md")`'>PAYLOCITY CODING CHALLENGE</a></p></li>
     <li><p>CONCISE EXPLANATION OF MY CODING STRATEGY</p></li>
     <li>
-      <p>HIGH LEVEL SUMMARY OF MY INFRASTRUCTURE:</p>
+      <p>HIGH LEVEL SUMMARY OF MY INFRASTRUCTURE: See my <a href="code/Markdown/pcc_100_system_description.md">Infrastructure Summary Page</a></p>
       <ul>
         <li>VERSION OF PYTHON USED</li>
         <li>pgAdmin tool for DBA work</li>

@@ -20,7 +20,7 @@ Created: December 15, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 06:04:01</span>
+Last Updated: 2022-01-19 06:07:45</span>
 </td>
 </tr>
 </tbody>
@@ -60,9 +60,11 @@ candidate's interview.
 
 ## Where can I find the detailed instructions for problems 1 & 2?
 
-1.  Problem 1: \<./pcc_020-010_problem1_write_python_program.md>
+1.  Problem 1: [Write a Python
+    Program](./pcc_020-010_problem1_write_python_program.md)
 
-2.  Problem 2: \<./pcc_020-020_problem2_sql_live_walkthrough.md>
+2.  Problem 2: [Live SQL
+    Walkthrough](./pcc_020-020_problem2_sql_live_walkthrough.md)
 
 ------------------------------------------------------------------------
 

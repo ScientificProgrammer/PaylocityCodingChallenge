@@ -80,9 +80,9 @@ pre code {
 
 ## Where can I find the detailed instructions for problems 1 &amp; 2?
 
-1. Problem 1: <./pcc_020-010_problem1_write_python_program.md>
+1. Problem 1: [Write a Python Program](./pcc_020-010_problem1_write_python_program.md)
 
-1. Problem 2: <./pcc_020-020_problem2_sql_live_walkthrough.md>
+1. Problem 2: [Live SQL Walkthrough](./pcc_020-020_problem2_sql_live_walkthrough.md)
 
 ---
 

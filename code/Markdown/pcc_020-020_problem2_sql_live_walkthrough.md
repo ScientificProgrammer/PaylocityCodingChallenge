@@ -1,4 +1,4 @@
-# 1 Paylocity Coding Challenge: Problem 2 of 2
+# Paylocity Coding Challenge: Problem 2 of 2
 
 <div style="font-size: 1.5em; padding-bottom: 0;">
 
@@ -20,13 +20,13 @@ Created: December 21, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 05:23:26</span>
+Last Updated: 2022-01-19 05:54:08</span>
 </td>
 </tr>
 </tbody>
 </table>
 
-## 1.1 SQL Exercise - Live Walkthrough
+## SQL Exercise - Live Walkthrough
 
 [Figure 1](#fig-container-erd-company-employee-position), which is shown
 below, illustrates an *entity relationship diagram* (ERD) for a logical
@@ -54,7 +54,7 @@ database](./../../img/fig_company_db_schema_939x151.png "Entity Relationship Dia
 
 </div>
 
-### 1.1.1 For the data model illustrated in **Figure 1**, please complete the following actions.
+### For the data model illustrated in **Figure 1**, please complete the following actions.
 
 1.  Write a SQL query to generate a result set for a report that
     contains the  

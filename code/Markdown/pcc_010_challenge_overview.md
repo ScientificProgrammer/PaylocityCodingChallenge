@@ -1,4 +1,4 @@
-# 1 Paylocity Coding Challenge Overview
+# Paylocity Coding Challenge Overview
 
 <div style="font-size: 1.5em; padding-bottom: 0;">
 
@@ -20,13 +20,13 @@ Created: December 15, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 05:22:19</span>
+Last Updated: 2022-01-19 05:53:43</span>
 </td>
 </tr>
 </tbody>
 </table>
 
-## 1.1 PURPOSE
+## PURPOSE
 
 <div style="font-size: 1.5em; color: red;">
 
@@ -56,7 +56,7 @@ must be submitted to Paylocity at least 24 hours prior to the
 candidate's interview.
 </blockquote>
 
-## 1.2 Problem 1 of 2: Writing a *Python* program to manage records in a *PostgreSQL* database
+## Problem 1 of 2: Writing a *Python* program to manage records in a *PostgreSQL* database
 
 Each candidate is required to complete the following exercise and return
 it a minimum of 24 hours before their interview. They will be asked to
@@ -80,7 +80,7 @@ exercise ahead of time and walk through their answer during the
 **Technical Interview**. The candidate will be expected to present their
 code and show it running on their machine.
 
-## 1.3 Problem 2 of 2: Multi-part SQL Exercise: Live walk-through
+## Problem 2 of 2: Multi-part SQL Exercise: Live walk-through
 
 The following figure shows an *entity relationship diagram* (ERD) for a
 conceptual data model containing the following four tables, which are

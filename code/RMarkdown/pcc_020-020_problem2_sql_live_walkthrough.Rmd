@@ -11,8 +11,8 @@ knit: (function(inputFile, encoding) {
       )
 output:
   md_document:
-    toc: yes
-    number_sections: yes
+    toc: no
+    number_sections: no
     variant: gfm
 ---
 

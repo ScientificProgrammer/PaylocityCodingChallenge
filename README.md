@@ -1,4 +1,4 @@
-# 1 Paylocity Coding Challenge: README
+# Paylocity Coding Challenge: README
 
 <div style="font-size: 1.5em; padding-bottom: 0;">
 
@@ -20,15 +20,15 @@ Created: December 15, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 05:46:02</span>
+Last Updated: 2022-01-19 05:53:17</span>
 </td>
 </tr>
 </tbody>
 </table>
 
-# 2 Overview
+# Overview
 
-## 2.1 What is the purpose of this Github repo?
+## What is the purpose of this Github repo?
 
 I created this Github repo was as part of candidate evaluation and
 interview process for Paylocity. As part of this process, Paylocity
@@ -37,7 +37,7 @@ database applications and writing SQL, specifically for the PostgreSQL
 database server. Paylocity refers to these exercises as the *Paylocity
 Coding Challenge*.
 
-## 2.2 What does this Github repo contain?
+## What does this Github repo contain?
 
 <div class="proofingOnlyContainer">
 

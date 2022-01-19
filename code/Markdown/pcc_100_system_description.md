@@ -1,4 +1,4 @@
-# 1 Paylocity Coding Challenge - System Configuration Details
+# Paylocity Coding Challenge - System Configuration Details
 
 <div style="font-size: 1.5em; padding-bottom: 0;">
 
@@ -20,19 +20,19 @@ Created: December 23, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 05:23:58</span>
+Last Updated: 2022-01-19 05:54:33</span>
 </td>
 </tr>
 </tbody>
 </table>
 
-## 1.1 Overview
+## Overview
 
 This page contains a summary of the key software components, frameworks,
 and operating systems that were used to complete the Paylocity Coding
 Challenge.
 
-## 1.2 OS PARAMS
+## OS PARAMS
 
 <table class="table table-striped table-condensed table-bordered" style="margin-left: auto; margin-right: auto;">
  <thead>
@@ -77,7 +77,7 @@ Challenge.
 </tbody>
 </table>
 
-## 1.3 Editors/IDEs
+## Editors/IDEs
 
 1.  `vim` on *Debian* running under Windows Subsystem for Linux (WSL)  
        
@@ -113,12 +113,12 @@ Challenge.
 
     3.  Auto-formatting provided by `Python Black`
 
-## 1.4 Database Administration Tool - pgAdmin 4 (Microsoft Windows x64)
+## Database Administration Tool - pgAdmin 4 (Microsoft Windows x64)
 
 ![**FIGURE**: pgAdmin 4 GUI for MS
 Windows](D:/GoogleDrive/eric.milgram/Career/Job%20Prospects/2021-11-09%20Paylocity/020%20Paylocity%20Coding%20Challenge/Paylocity%20Coding%20Challenge/img/fig_pgAdmin4_gui_for_Win11_x64.png)
 
-### 1.4.1 pgAdmin4 Specifications
+### pgAdmin4 Specifications
 
 The following table contains a summary of the pgAdmin4 specification
 values for the instance that I used to complete this coding challenge.

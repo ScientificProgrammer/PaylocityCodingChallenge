@@ -141,7 +141,13 @@ FOLLOWING ITEMS.
     <li>
       <p>HIGH LEVEL SUMMARY OF MY INFRASTRUCTURE: See my <a href="code/Markdown/pcc_100_system_description.md">Infrastructure Summary Page</a></p>
       <ul>
-        <li>VERSION OF PYTHON USED</li>
+        <li>
+          <div>VERSIONS OF PYTHON USED:</div>
+          <ul>
+            <li>MS Windows: <span style="font-family: courier new, courier, monospace, serif;">3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)]</span></li>
+            <li>Debian Linux - WSL <span style="font-family: courier new, courier, monospace, serif;">3.7.3 (default, Jan 22 2021, 20:04:44) [GCC 8.3.0]</span></li>
+          </ul>
+        </li>
         <li>pgAdmin tool for DBA work</li>
         <li>AWS Infrastructure: 1) PG running on RDS, 2) VPC Configuration, 3) CloudWatch Monitoring</li>
       </ul

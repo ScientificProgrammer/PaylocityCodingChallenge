@@ -20,7 +20,7 @@ Created: December 15, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 06:12:21</span>
+Last Updated: 2022-01-19 06:21:06</span>
 </td>
 </tr>
 </tbody>
@@ -144,7 +144,26 @@ Summary Page</a>
 </p>
 <ul>
 <li>
-VERSION OF PYTHON USED
+
+<div>
+
+VERSIONS OF PYTHON USED:
+
+</div>
+
+<ul>
+<li>
+MS Windows: <span
+style="font-family: courier new, courier, monospace, serif;">3.10.1
+(tags/v3.10.1:2cd268a, Dec 6 2021, 19:10:37) \[MSC v.1929 64 bit
+(AMD64)\]</span>
+</li>
+<li>
+Debian Linux - WSL <span
+style="font-family: courier new, courier, monospace, serif;">3.7.3
+(default, Jan 22 2021, 20:04:44) \[GCC 8.3.0\]</span>
+</li>
+</ul>
 </li>
 <li>
 pgAdmin tool for DBA work

@@ -103,6 +103,13 @@ knitr::raw_html(kblTb1)
   
 ```
 
+## Versions of Python Used to Verify Code Base
+
+1. MS Windows: `3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)]`
+
+1. Debian Linux under WSL: `3.7.3 (default, Jan 22 2021, 20:04:44) [GCC 8.3.0]`
+
+
 ## Editors/IDEs
 
 1. `vim` on *Debian* running under Windows Subsystem for Linux (WSL)  

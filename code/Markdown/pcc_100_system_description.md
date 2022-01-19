@@ -20,7 +20,7 @@ Created: December 23, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 05:54:33</span>
+Last Updated: 2022-01-19 06:24:35</span>
 </td>
 </tr>
 </tbody>
@@ -76,6 +76,14 @@ Challenge.
   </tr>
 </tbody>
 </table>
+
+## Versions of Python Used to Verify Code Base
+
+1.  MS Windows:
+    `3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)]`
+
+2.  Debian Linux under WSL:
+    `3.7.3 (default, Jan 22 2021, 20:04:44) [GCC 8.3.0]`
 
 ## Editors/IDEs
 

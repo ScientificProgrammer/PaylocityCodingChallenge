@@ -149,7 +149,7 @@ FOLLOWING ITEMS.
           </ul>
         </li>
         <li>pgAdmin tool for DBA work</li>
-        <li>AWS Infrastructure: 1) PG running on RDS, 2) VPC Configuration, 3) CloudWatch Monitoring</li>
+        <li>AWS Infrastructure: 1) PG running on RDS (see <a href="./data/100_PCC_PostgreSQL_AWS_RDS_description.json">100_PCC_PostgreSQL_AWS_RDS_description.json</a>), 2) VPC Configuration, 3) CloudWatch Monitoring</li>
       </ul
     </li>
     <li>

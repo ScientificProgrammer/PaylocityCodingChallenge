@@ -20,7 +20,7 @@ Created: December 15, 2021
 </tr>
 <tr>
 <td style="padding: 0;">
-Last Updated: 2022-01-19 06:21:06</span>
+Last Updated: 2022-01-19 06:36:35</span>
 </td>
 </tr>
 </tbody>
@@ -169,8 +169,9 @@ style="font-family: courier new, courier, monospace, serif;">3.7.3
 pgAdmin tool for DBA work
 </li>
 <li>
-AWS Infrastructure: 1) PG running on RDS, 2) VPC Configuration, 3)
-CloudWatch Monitoring
+AWS Infrastructure: 1) PG running on RDS (see
+<a href="./data/100_PCC_PostgreSQL_AWS_RDS_description.json">100_PCC_PostgreSQL_AWS_RDS_description.json</a>),
+2) VPC Configuration, 3) CloudWatch Monitoring
 </li>
 </ul
     </li>
